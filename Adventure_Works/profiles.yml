@@ -1,0 +1,17 @@
+Adventure_Works:
+  outputs:
+    dev:
+      type: snowflake
+      threads: 1
+      account: {{Snowflake_user_id}}
+      user: AIRBYTE_USER
+      password: password
+      role: AIRBYTE_ROLE
+      warehouse: AIRBYTE_WAREHOUSE
+      database: AIRBYTE_DATABASE
+      schema: AIRBYTE_SCHEMA
+  target: dev
+
+      
+
+      

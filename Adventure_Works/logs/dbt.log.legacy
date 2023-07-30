@@ -1,0 +1,4 @@
+2023-04-04 12:32:37.993105 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2023-04-04 12:32:39.145823 (MainThread): You have an incompatible version of 'pyarrow' installed (5.0.0), please install a version that adheres to: 'pyarrow<8.1.0,>=8.0.0; extra == "pandas"'
+2023-04-04 12:37:25.786856 (MainThread): the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+2023-04-04 12:37:26.643661 (MainThread): You have an incompatible version of 'pyarrow' installed (5.0.0), please install a version that adheres to: 'pyarrow<8.1.0,>=8.0.0; extra == "pandas"'

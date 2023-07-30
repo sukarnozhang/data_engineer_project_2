@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_salesperson_customer_based_on_gender
+    columns:
+      - name: business_key
+        description: The surrogate key of the salesperson_customer_based_on_gender table 
+        tests:
+          - unique
+          - not_null
+
+      - name: salesid
+        description: The natural key of the salesperson_customer_based_on_gender table 
+        tests:
+          - not_null
+          - unique
+          - number_greater_than:
+              min_num: 100000
+

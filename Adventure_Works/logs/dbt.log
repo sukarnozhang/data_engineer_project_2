@@ -1,0 +1,2892 @@
+
+
+============================== 2023-04-04 12:22:58.520250 | cc4c2791-8284-4154-a3ac-9ecb9674e366 ==============================
+[0m12:22:58.520250 [info ] [MainThread]: Running with dbt=1.4.4
+[0m12:22:58.522359 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\Adventure_works_ETL_snowflake\\Adventure_works_ETL_snowflake\\Adventure_Works', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m12:22:58.522892 [debug] [MainThread]: Tracking: tracking
+[0m12:22:58.524478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BAB908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BAB048>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BAB208>]}
+[0m12:22:58.525017 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:22:58.526080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BAB908>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BAB988>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814BABB88>]}
+[0m12:22:58.526606 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-04 12:24:42.731905 | 73cdee9e-2165-4047-bdbf-4a5d68d5d1d9 ==============================
+[0m12:24:42.731905 [info ] [MainThread]: Running with dbt=1.4.4
+[0m12:24:42.734419 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\Adventure_works_ETL_snowflake\\Adventure_works_ETL_snowflake\\Adventure_Works', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m12:24:42.734419 [debug] [MainThread]: Tracking: tracking
+[0m12:24:42.736420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77ED8C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77EDDC8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77ED448>]}
+[0m12:24:42.738419 [debug] [MainThread]: Set downloads directory='C:\Users\ranis\AppData\Local\Temp\dbt-downloads-2lc0wjab'
+[0m12:24:42.739419 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m12:24:43.542046 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m12:24:43.542046 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m12:24:43.678494 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m12:24:43.682493 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m12:24:43.820139 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m12:24:43.831653 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m12:24:45.560938 [info ] [MainThread]:   Installed from version 0.9.2
+[0m12:24:45.561937 [info ] [MainThread]:   Updated version available: 1.0.0
+[0m12:24:45.563445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '73cdee9e-2165-4047-bdbf-4a5d68d5d1d9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77D5348>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77D5A08>]}
+[0m12:24:45.564456 [info ] [MainThread]: Installing calogica/dbt_date
+[0m12:24:46.152020 [info ] [MainThread]:   Installed from version 0.6.3
+[0m12:24:46.153533 [info ] [MainThread]:   Updated version available: 0.7.2
+[0m12:24:46.155543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '73cdee9e-2165-4047-bdbf-4a5d68d5d1d9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E78ABE48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E78AB7C8>]}
+[0m12:24:46.156547 [info ] [MainThread]: 
+[0m12:24:46.157554 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m12:24:46.161557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77EBAC8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E7895D08>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241E77EDDC8>]}
+[0m12:24:46.163063 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-04 12:30:04.314049 | da8dd254-8496-4ccd-88ef-abd595f95575 ==============================
+[0m12:30:04.314049 [info ] [MainThread]: Running with dbt=1.4.4
+[0m12:30:04.317053 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\Adventure_works_ETL_snowflake\\Adventure_works_ETL_snowflake\\Adventure_Works', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m12:30:04.318052 [debug] [MainThread]: Tracking: tracking
+[0m12:30:04.319049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF10C848>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF115E08>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF115D88>]}
+[0m12:30:04.321051 [debug] [MainThread]: Set downloads directory='C:\Users\ranis\AppData\Local\Temp\dbt-downloads-gxx1qadi'
+[0m12:30:04.321051 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m12:30:04.820623 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m12:30:04.820623 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m12:30:04.960051 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m12:30:04.965614 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m12:30:05.098308 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m12:30:05.110867 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m12:30:06.665461 [info ] [MainThread]:   Installed from version 0.9.2
+[0m12:30:06.667461 [info ] [MainThread]:   Updated version available: 1.0.0
+[0m12:30:06.669460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'da8dd254-8496-4ccd-88ef-abd595f95575', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF0F4988>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF0F43C8>]}
+[0m12:30:06.670458 [info ] [MainThread]: Installing calogica/dbt_date
+[0m12:30:07.317290 [info ] [MainThread]:   Installed from version 0.6.3
+[0m12:30:07.319288 [info ] [MainThread]:   Updated version available: 0.7.2
+[0m12:30:07.320288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'da8dd254-8496-4ccd-88ef-abd595f95575', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF0F4C08>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF1CB8C8>]}
+[0m12:30:07.321289 [info ] [MainThread]: 
+[0m12:30:07.323524 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m12:30:07.328535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF1B6FC8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF10A988>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237DF10C2C8>]}
+[0m12:30:07.329534 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-04 12:32:39.841906 | f14717e2-ca37-4757-995c-0ce903a4ea06 ==============================
+[0m12:32:39.841906 [info ] [MainThread]: Running with dbt=1.4.4
+[0m12:32:39.843914 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\Adventure_works_ETL_snowflake\\Adventure_works_ETL_snowflake\\Adventure_Works', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:32:39.843914 [debug] [MainThread]: Tracking: tracking
+[0m12:32:39.843914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E5EFE808>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E5EFFC48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E5EFFCC8>]}
+[0m12:32:39.906590 [debug] [MainThread]: checksum: 170d819e8a7f11e09c497566dd7f61e1355cb9fb514921503937b951cb4a2250, vars: {}, profile: None, target: None, version: 1.4.4
+[0m12:32:39.908588 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:32:39.910590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E5EF3208>]}
+[0m12:32:43.088006 [debug] [MainThread]: 1603: static parser failed on serving\dim_customer.sql
+[0m12:32:43.120052 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_customer.sql
+[0m12:32:43.121635 [debug] [MainThread]: 1603: static parser failed on serving\dim_customer_scd.sql
+[0m12:32:43.128574 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_customer_scd.sql
+[0m12:32:43.130574 [debug] [MainThread]: 1603: static parser failed on serving\dim_date.sql
+[0m12:32:43.136088 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_date.sql
+[0m12:32:43.138089 [debug] [MainThread]: 1603: static parser failed on serving\dim_product.sql
+[0m12:32:43.144605 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_product.sql
+[0m12:32:43.146605 [debug] [MainThread]: 1603: static parser failed on serving\dim_sales.sql
+[0m12:32:43.152912 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_sales.sql
+[0m12:32:43.154955 [debug] [MainThread]: 1603: static parser failed on serving\dim_salesorderdetail_scd.sql
+[0m12:32:43.159956 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_salesorderdetail_scd.sql
+[0m12:32:43.162507 [debug] [MainThread]: 1603: static parser failed on serving\dim_salesorderheader_scd.sql
+[0m12:32:43.169507 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_salesorderheader_scd.sql
+[0m12:32:43.170507 [debug] [MainThread]: 1603: static parser failed on serving\dim_salesperson_customer_based_on_gender.sql
+[0m12:32:43.176598 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\dim_salesperson_customer_based_on_gender.sql
+[0m12:32:43.178601 [debug] [MainThread]: 1603: static parser failed on serving\fct_sales.sql
+[0m12:32:43.191762 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\fct_sales.sql
+[0m12:32:43.193351 [debug] [MainThread]: 1603: static parser failed on serving\fct_sales_incr.sql
+[0m12:32:43.211997 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\fct_sales_incr.sql
+[0m12:32:43.214039 [debug] [MainThread]: 1603: static parser failed on serving\fct_sales_scd2.sql
+[0m12:32:43.228598 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\fct_sales_scd2.sql
+[0m12:32:43.229599 [debug] [MainThread]: 1603: static parser failed on serving\obt_sales.sql
+[0m12:32:43.258255 [debug] [MainThread]: 1602: parser fallback to jinja rendering on serving\obt_sales.sql
+[0m12:32:43.260256 [debug] [MainThread]: 1603: static parser failed on staging\date\stg_date.sql
+[0m12:32:43.409404 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\date\stg_date.sql
+[0m12:32:43.413611 [debug] [MainThread]: 1699: static parser successfully parsed staging\reports_transformation\customer_currency_rate.sql
+[0m12:32:43.416642 [debug] [MainThread]: 1699: static parser successfully parsed staging\reports_transformation\product_per_customer.sql
+[0m12:32:43.419645 [debug] [MainThread]: 1603: static parser failed on staging\reports_transformation\salesperson_commision_product.sql
+[0m12:32:43.429135 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\reports_transformation\salesperson_commision_product.sql
+[0m12:32:43.430135 [debug] [MainThread]: 1699: static parser successfully parsed staging\reports_transformation\salesperson_customer_based_on_gender.sql
+[0m12:32:43.433683 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_creditcard.sql
+[0m12:32:43.435726 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_customer.sql
+[0m12:32:43.438682 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_employee.sql
+[0m12:32:43.441718 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_product.sql
+[0m12:32:43.444985 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_salesorderdetail.sql
+[0m12:32:43.447025 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_salesorderheader.sql
+[0m12:32:43.449986 [debug] [MainThread]: 1699: static parser successfully parsed staging\sales\stg_salesperson_customer_based_on_gender.sql
+[0m12:32:43.814943 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Adventure_Works.example
+[0m12:32:43.824532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E6478188>]}
+[0m12:32:43.853965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E6283548>]}
+[0m12:32:43.854963 [info ] [MainThread]: Found 24 models, 14 tests, 4 snapshots, 0 analyses, 598 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics
+[0m12:32:43.855967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E6283E88>]}
+[0m12:32:43.861469 [info ] [MainThread]: 
+[0m12:32:43.864477 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:32:43.868475 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBYTE_DATABASE'
+[0m12:32:43.879944 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+[0m12:32:43.881452 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE"} */
+show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+[0m12:32:43.881452 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:32:46.475737 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3 seconds
+[0m12:32:46.478736 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+[0m12:32:46.707566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA'
+[0m12:32:46.717193 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+[0m12:32:46.717193 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+[0m12:32:46.717193 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:32:48.408312 [debug] [ThreadPool]: SQL status: SUCCESS 198 in 2 seconds
+[0m12:32:48.415334 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+[0m12:32:48.645880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E61B9248>]}
+[0m12:32:48.646878 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:32:48.646878 [info ] [MainThread]: 
+[0m12:32:48.651388 [debug] [Thread-1  ]: Began running node model.Adventure_Works.customer_currency_rate
+[0m12:32:48.652397 [info ] [Thread-1  ]: 1 of 24 START sql view model AIRBYTE_SCHEMA.customer_currency_rate ............. [RUN]
+[0m12:32:48.654401 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.customer_currency_rate'
+[0m12:32:48.655397 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.customer_currency_rate
+[0m12:32:48.660399 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.customer_currency_rate"
+[0m12:32:48.662918 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.customer_currency_rate (compile): 2023-04-04 12:32:48.655397 => 2023-04-04 12:32:48.662918
+[0m12:32:48.663914 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.customer_currency_rate
+[0m12:32:48.724479 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.customer_currency_rate"
+[0m12:32:48.728471 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.customer_currency_rate"
+[0m12:32:48.728471 [debug] [Thread-1  ]: On model.Adventure_Works.customer_currency_rate: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.customer_currency_rate"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.customer_currency_rate
+  
+   as (
+    --Insights into the type of currency , average rate for purchase done by customers.
+with currency_rate as(
+    select tocurrencycode,
+    fromcurrencycode,
+    currencyrateid,
+    averagerate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.currencyrate
+),
+
+sales_order_header as(
+    select currencyrateid,
+    customerid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+)
+
+select
+    c.tocurrencycode,
+    c.fromcurrencycode,
+    c.currencyrateid,
+    c.averagerate,
+    s.customerid
+from sales_order_header as s
+    inner join currency_rate as c
+    on s.currencyrateid = c.currencyrateid
+  );
+[0m12:32:48.729474 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m12:32:50.349294 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:32:50.374881 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.customer_currency_rate (execute): 2023-04-04 12:32:48.664921 => 2023-04-04 12:32:50.373875
+[0m12:32:50.374881 [debug] [Thread-1  ]: On model.Adventure_Works.customer_currency_rate: Close
+[0m12:32:50.573843 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E764FE08>]}
+[0m12:32:50.574805 [info ] [Thread-1  ]: 1 of 24 OK created sql view model AIRBYTE_SCHEMA.customer_currency_rate ........ [[32mSUCCESS 1[0m in 1.92s]
+[0m12:32:50.576804 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.customer_currency_rate
+[0m12:32:50.577805 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_customer_scd
+[0m12:32:50.577805 [info ] [Thread-1  ]: 2 of 24 START sql view model AIRBYTE_SCHEMA.dim_customer_scd ................... [RUN]
+[0m12:32:50.578844 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_customer_scd'
+[0m12:32:50.579805 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_customer_scd
+[0m12:32:50.585355 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_customer_scd"
+[0m12:32:50.586356 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_customer_scd (compile): 2023-04-04 12:32:50.579805 => 2023-04-04 12:32:50.586356
+[0m12:32:50.587356 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_customer_scd
+[0m12:32:50.594525 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_customer_scd"
+[0m12:32:50.597485 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_customer_scd"
+[0m12:32:50.598485 [debug] [Thread-1  ]: On model.Adventure_Works.dim_customer_scd: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_customer_scd"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_customer_scd
+  
+   as (
+    with snp_customer as (
+    select
+        md5(cast(coalesce(cast(customerid as TEXT), '') || '-' || coalesce(cast(dbt_valid_from as TEXT), '') || '-' || coalesce(cast(dbt_valid_to as TEXT), '') as TEXT)) as snp_customer_key 
+        , personid 
+        , territoryid
+        , storeid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.snp_customer
+) 
+
+select * 
+from snp_customer
+  );
+[0m12:32:50.598485 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:32:52.313781 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:32:52.315780 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_customer_scd (execute): 2023-04-04 12:32:50.587356 => 2023-04-04 12:32:52.315780
+[0m12:32:52.315780 [debug] [Thread-1  ]: On model.Adventure_Works.dim_customer_scd: Close
+[0m12:32:52.535183 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7670DC8>]}
+[0m12:32:52.536219 [info ] [Thread-1  ]: 2 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_customer_scd .............. [[32mSUCCESS 1[0m in 1.96s]
+[0m12:32:52.537183 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_customer_scd
+[0m12:32:52.538186 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_salesorderdetail_scd
+[0m12:32:52.538186 [info ] [Thread-1  ]: 3 of 24 START sql view model AIRBYTE_SCHEMA.dim_salesorderdetail_scd ........... [RUN]
+[0m12:32:52.540228 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_salesorderdetail_scd'
+[0m12:32:52.540228 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_salesorderdetail_scd
+[0m12:32:52.545779 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_salesorderdetail_scd"
+[0m12:32:52.546780 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesorderdetail_scd (compile): 2023-04-04 12:32:52.540228 => 2023-04-04 12:32:52.546780
+[0m12:32:52.546780 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_salesorderdetail_scd
+[0m12:32:52.553327 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_salesorderdetail_scd"
+[0m12:32:52.555328 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_salesorderdetail_scd"
+[0m12:32:52.555328 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesorderdetail_scd: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_salesorderdetail_scd"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_salesorderdetail_scd
+  
+   as (
+    with snp_salesorderdetail as (
+    select
+        md5(cast(coalesce(cast(salesorderdetailid as TEXT), '') || '-' || coalesce(cast(dbt_valid_from as TEXT), '') || '-' || coalesce(cast(dbt_valid_to as TEXT), '') as TEXT)) as snp_orderdetailid_key 
+        , *
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.snp_salesorderdetail
+) 
+
+select * 
+from snp_salesorderdetail
+  );
+[0m12:32:52.555328 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:32:53.978670 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:32:53.980617 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesorderdetail_scd (execute): 2023-04-04 12:32:52.547742 => 2023-04-04 12:32:53.980617
+[0m12:32:53.980617 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesorderdetail_scd: Close
+[0m12:32:54.186948 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7872388>]}
+[0m12:32:54.186948 [info ] [Thread-1  ]: 3 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_salesorderdetail_scd ...... [[32mSUCCESS 1[0m in 1.65s]
+[0m12:32:54.188949 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_salesorderdetail_scd
+[0m12:32:54.189949 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_salesorderheader_scd
+[0m12:32:54.189949 [info ] [Thread-1  ]: 4 of 24 START sql view model AIRBYTE_SCHEMA.dim_salesorderheader_scd ........... [RUN]
+[0m12:32:54.191459 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_salesorderheader_scd'
+[0m12:32:54.192471 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_salesorderheader_scd
+[0m12:32:54.198465 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_salesorderheader_scd"
+[0m12:32:54.199466 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesorderheader_scd (compile): 2023-04-04 12:32:54.192471 => 2023-04-04 12:32:54.199466
+[0m12:32:54.200465 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_salesorderheader_scd
+[0m12:32:54.207985 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_salesorderheader_scd"
+[0m12:32:54.209984 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_salesorderheader_scd"
+[0m12:32:54.209984 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesorderheader_scd: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_salesorderheader_scd"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_salesorderheader_scd
+  
+   as (
+    with snp_salesorderheader as (
+    select
+        md5(cast(coalesce(cast(salesorderid as TEXT), '') || '-' || coalesce(cast(dbt_valid_from as TEXT), '') || '-' || coalesce(cast(dbt_valid_to as TEXT), '') as TEXT)) as snp_salesorderheader_key 
+        , *
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.snp_salesorderheader
+) 
+
+select * 
+from snp_salesorderheader
+  );
+[0m12:32:54.209984 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:32:55.943280 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:32:55.945280 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesorderheader_scd (execute): 2023-04-04 12:32:54.200465 => 2023-04-04 12:32:55.945280
+[0m12:32:55.946279 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesorderheader_scd: Close
+[0m12:32:56.135338 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7798C08>]}
+[0m12:32:56.135338 [info ] [Thread-1  ]: 4 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_salesorderheader_scd ...... [[32mSUCCESS 1[0m in 1.94s]
+[0m12:32:56.137341 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_salesorderheader_scd
+[0m12:32:56.137341 [debug] [Thread-1  ]: Began running node model.Adventure_Works.product_per_customer
+[0m12:32:56.138382 [info ] [Thread-1  ]: 5 of 24 START sql table model AIRBYTE_SCHEMA.product_per_customer .............. [RUN]
+[0m12:32:56.140341 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.product_per_customer'
+[0m12:32:56.140341 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.product_per_customer
+[0m12:32:56.145859 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.product_per_customer"
+[0m12:32:56.146901 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.product_per_customer (compile): 2023-04-04 12:32:56.140341 => 2023-04-04 12:32:56.146901
+[0m12:32:56.147865 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.product_per_customer
+[0m12:32:56.189019 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.product_per_customer"
+[0m12:32:56.193537 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.product_per_customer"
+[0m12:32:56.193537 [debug] [Thread-1  ]: On model.Adventure_Works.product_per_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.product_per_customer"} */
+create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.product_per_customer  as
+        (--products classified by customer as count_of_products
+
+with customer_id as(
+    select customerid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.customer
+),
+salesperson_order_header as(
+    select customerid,
+    salesorderid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+),
+sales_order_detail as(
+    select salesorderid,
+    productid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderdetail
+)
+
+
+select
+    c.customerid,
+    sum(sd.productid) as sum_of_product
+from
+    customer_id as c
+    inner join salesperson_order_header as so
+    on c.customerid = so.customerid
+    inner join sales_order_detail as sd
+    on sd.salesorderid = so.salesorderid
+group by c.customerid
+        );
+[0m12:32:56.194532 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:00.361571 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 4 seconds
+[0m12:33:00.368515 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.product_per_customer (execute): 2023-04-04 12:32:56.147865 => 2023-04-04 12:33:00.368515
+[0m12:33:00.369515 [debug] [Thread-1  ]: On model.Adventure_Works.product_per_customer: Close
+[0m12:33:00.569285 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7886A08>]}
+[0m12:33:00.570285 [info ] [Thread-1  ]: 5 of 24 OK created sql table model AIRBYTE_SCHEMA.product_per_customer ......... [[32mSUCCESS 1[0m in 4.43s]
+[0m12:33:00.572460 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.product_per_customer
+[0m12:33:00.572460 [debug] [Thread-1  ]: Began running node model.Adventure_Works.salesperson_commision_product
+[0m12:33:00.573458 [info ] [Thread-1  ]: 6 of 24 START sql table model AIRBYTE_SCHEMA.salesperson_commision_product ..... [RUN]
+[0m12:33:00.574460 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.salesperson_commision_product'
+[0m12:33:00.575498 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.salesperson_commision_product
+[0m12:33:00.580497 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.salesperson_commision_product"
+[0m12:33:00.582047 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.salesperson_commision_product (compile): 2023-04-04 12:33:00.575498 => 2023-04-04 12:33:00.582047
+[0m12:33:00.582047 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.salesperson_commision_product
+[0m12:33:00.589052 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.salesperson_commision_product"
+[0m12:33:00.591560 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.salesperson_commision_product"
+[0m12:33:00.592567 [debug] [Thread-1  ]: On model.Adventure_Works.salesperson_commision_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.salesperson_commision_product"} */
+create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesperson_commision_product  as
+        (--salesperson commision on productid
+ 
+ 
+ 
+with salesperson_commission as(
+    select businessentityid,
+    commissionpct
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesperson
+),
+salesperson_order_header as(
+    select salespersonid,
+    salesorderid
+    from  AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+),
+sales_order_detail as(
+    select salesorderid,
+    productid
+    from  AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderdetail
+)
+SELECT 
+    sum(sc.commissionpct) as commission,
+    count(sd.productid) as count_of_product,
+    sd.salesorderid as sales_order_id,
+    
+    case
+            when count_of_product = 1000 then commission * 1.75
+            when count_of_product = 500 then commission * 1.25
+            else commission
+        end
+ as bonus
+from
+    salesperson_commission as sc
+    inner join salesperson_order_header as so
+    on sc.businessentityid=so.salespersonid
+    inner join sales_order_detail as sd
+    on sd.salesorderid = so.salesorderid
+group by sc.businessentityid, sd.salesorderid
+        );
+[0m12:33:00.592567 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:04.260117 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 4 seconds
+[0m12:33:04.262743 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.salesperson_commision_product (execute): 2023-04-04 12:33:00.583052 => 2023-04-04 12:33:04.262743
+[0m12:33:04.263679 [debug] [Thread-1  ]: On model.Adventure_Works.salesperson_commision_product: Close
+[0m12:33:04.483636 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7886B08>]}
+[0m12:33:04.484648 [info ] [Thread-1  ]: 6 of 24 OK created sql table model AIRBYTE_SCHEMA.salesperson_commision_product  [[32mSUCCESS 1[0m in 3.91s]
+[0m12:33:04.486648 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.salesperson_commision_product
+[0m12:33:04.487649 [debug] [Thread-1  ]: Began running node model.Adventure_Works.salesperson_customer_based_on_gender
+[0m12:33:04.488644 [info ] [Thread-1  ]: 7 of 24 START sql view model AIRBYTE_SCHEMA.salesperson_customer_based_on_gender  [RUN]
+[0m12:33:04.490652 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.salesperson_customer_based_on_gender'
+[0m12:33:04.491648 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.salesperson_customer_based_on_gender
+[0m12:33:04.496864 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.salesperson_customer_based_on_gender"
+[0m12:33:04.498371 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.salesperson_customer_based_on_gender (compile): 2023-04-04 12:33:04.491648 => 2023-04-04 12:33:04.498371
+[0m12:33:04.498371 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.salesperson_customer_based_on_gender
+[0m12:33:04.507903 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.salesperson_customer_based_on_gender"
+[0m12:33:04.509901 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.salesperson_customer_based_on_gender"
+[0m12:33:04.509901 [debug] [Thread-1  ]: On model.Adventure_Works.salesperson_customer_based_on_gender: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.salesperson_customer_based_on_gender"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesperson_customer_based_on_gender
+  
+   as (
+    --Find effectiveness of each sales person based on count of customers handling by grouping by gender and per salespersonid to provide meaningful insights to boost sales.
+
+with persons_identity as (
+	select businessentityid,
+    gender
+	from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.employee
+),
+targeted_sales_orders as (
+	select
+		salespersonid,
+		customerid
+	from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+	where orderdate >= '2013-01-01' and orderdate < '2014-01-01'
+)
+SELECT
+	count(customerid) as count_of_customers,
+	tso.salespersonid as salesid,
+	fe.gender as gen
+from targeted_sales_orders tso
+	inner join persons_identity fe
+	on tso.salespersonid = fe.businessentityid
+group by fe.gender, tso.salespersonid
+  );
+[0m12:33:04.511415 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:06.383614 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:06.388573 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.salesperson_customer_based_on_gender (execute): 2023-04-04 12:33:04.499380 => 2023-04-04 12:33:06.388573
+[0m12:33:06.388573 [debug] [Thread-1  ]: On model.Adventure_Works.salesperson_customer_based_on_gender: Close
+[0m12:33:06.619876 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E78C5B48>]}
+[0m12:33:06.619876 [info ] [Thread-1  ]: 7 of 24 OK created sql view model AIRBYTE_SCHEMA.salesperson_customer_based_on_gender  [[32mSUCCESS 1[0m in 2.13s]
+[0m12:33:06.621384 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.salesperson_customer_based_on_gender
+[0m12:33:06.621384 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_creditcard
+[0m12:33:06.622914 [info ] [Thread-1  ]: 8 of 24 START sql view model AIRBYTE_SCHEMA.stg_creditcard ..................... [RUN]
+[0m12:33:06.624921 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_creditcard'
+[0m12:33:06.624921 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_creditcard
+[0m12:33:06.628919 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_creditcard"
+[0m12:33:06.629920 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_creditcard (compile): 2023-04-04 12:33:06.624921 => 2023-04-04 12:33:06.629920
+[0m12:33:06.629920 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_creditcard
+[0m12:33:06.637430 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_creditcard"
+[0m12:33:06.639433 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_creditcard"
+[0m12:33:06.639433 [debug] [Thread-1  ]: On model.Adventure_Works.stg_creditcard: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_creditcard"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_creditcard
+  
+   as (
+    with source_data as (
+    select
+        creditcardid
+        , cardtype
+        , expyear
+        , modifieddate
+        , expmonth
+        , cardnumber
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.creditcard
+)
+select *
+from source_data
+  );
+[0m12:33:06.640438 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:08.202931 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:08.205938 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_creditcard (execute): 2023-04-04 12:33:06.631424 => 2023-04-04 12:33:08.205938
+[0m12:33:08.206937 [debug] [Thread-1  ]: On model.Adventure_Works.stg_creditcard: Close
+[0m12:33:08.427183 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7627648>]}
+[0m12:33:08.427183 [info ] [Thread-1  ]: 8 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_creditcard ................ [[32mSUCCESS 1[0m in 1.80s]
+[0m12:33:08.429182 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_creditcard
+[0m12:33:08.430184 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_customer
+[0m12:33:08.430184 [info ] [Thread-1  ]: 9 of 24 START sql view model AIRBYTE_SCHEMA.stg_customer ....................... [RUN]
+[0m12:33:08.432707 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_customer'
+[0m12:33:08.432707 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_customer
+[0m12:33:08.438714 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_customer"
+[0m12:33:08.440714 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_customer (compile): 2023-04-04 12:33:08.433707 => 2023-04-04 12:33:08.440714
+[0m12:33:08.442220 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_customer
+[0m12:33:08.455757 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_customer"
+[0m12:33:08.457757 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_customer"
+[0m12:33:08.458757 [debug] [Thread-1  ]: On model.Adventure_Works.stg_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_customer"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_customer
+  
+   as (
+    with source_data as (
+    select
+        customerid
+        , personid
+        , storeid
+        , territoryid
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.customer
+)
+select *
+from source_data
+  );
+[0m12:33:08.459757 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:09.968359 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:09.970336 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_customer (execute): 2023-04-04 12:33:08.442220 => 2023-04-04 12:33:09.970336
+[0m12:33:09.970336 [debug] [Thread-1  ]: On model.Adventure_Works.stg_customer: Close
+[0m12:33:10.176984 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E77E5688>]}
+[0m12:33:10.177980 [info ] [Thread-1  ]: 9 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_customer .................. [[32mSUCCESS 1[0m in 1.75s]
+[0m12:33:10.178982 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_customer
+[0m12:33:10.178982 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_date
+[0m12:33:10.179983 [info ] [Thread-1  ]: 10 of 24 START sql view model AIRBYTE_SCHEMA.stg_date .......................... [RUN]
+[0m12:33:10.181489 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_date'
+[0m12:33:10.181489 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_date
+[0m12:33:10.199709 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_date"
+[0m12:33:10.199709 [debug] [Thread-1  ]: On model.Adventure_Works.stg_date: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_date"} */
+select datediff(
+        day,
+        cast('2011-01-01' as TIMESTAMP),
+        cast('2023-04-04' as TIMESTAMP)
+        )
+[0m12:33:10.200709 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:11.718988 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:11.747934 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_date"
+[0m12:33:11.749911 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_date (compile): 2023-04-04 12:33:10.182496 => 2023-04-04 12:33:11.748940
+[0m12:33:11.749911 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_date
+[0m12:33:11.758448 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_date"
+[0m12:33:11.767680 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_date"
+[0m12:33:11.768681 [debug] [Thread-1  ]: On model.Adventure_Works.stg_date: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_date"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_date
+  
+   as (
+    
+    
+with base_dates as (
+    
+    with date_spine as
+(
+
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+     + 
+    
+    p12.generated_number * power(2, 12)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+     cross join 
+    
+    p as p12
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 4476
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    dateadd(
+        day,
+        row_number() over (order by 1) - 1,
+        cast('2011-01-01' as TIMESTAMP)
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2023-04-04' as TIMESTAMP)
+
+)
+
+select * from filtered
+
+
+
+)
+select
+    cast(d.date_day as TIMESTAMP) as date_day
+from
+    date_spine d
+
+
+),
+dates_with_prior_year_dates as (
+
+    select
+        cast(d.date_day as date) as date_day,
+        cast(
+
+    dateadd(
+        year,
+        -1,
+        d.date_day
+        )
+
+ as date) as prior_year_date_day,
+        cast(
+
+    dateadd(
+        day,
+        -364,
+        d.date_day
+        )
+
+ as date) as prior_year_over_year_date_day
+    from
+    	base_dates d
+
+)
+select
+    d.date_day,
+    cast(
+
+    dateadd(
+        day,
+        -1,
+        d.date_day
+        )
+
+ as date) as prior_date_day,
+    cast(
+
+    dateadd(
+        day,
+        1,
+        d.date_day
+        )
+
+ as date) as next_date_day,
+    d.prior_year_date_day as prior_year_date_day,
+    d.prior_year_over_year_date_day,
+    case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end as day_of_week,
+    date_part('dayofweekiso', d.date_day) as day_of_week_iso,
+    -- long version not implemented on Snowflake so we're doing it manually :/
+    case dayname(d.date_day)
+        when 'Mon' then 'Monday'
+        when 'Tue' then 'Tuesday'
+        when 'Wed' then 'Wednesday'
+        when 'Thu' then 'Thursday'
+        when 'Fri' then 'Friday'
+        when 'Sat' then 'Saturday'
+        when 'Sun' then 'Sunday'
+    end as day_of_week_name,
+    dayname(d.date_day) as day_of_week_name_short,
+    date_part('day', d.date_day) as day_of_month,
+    date_part('dayofyear', d.date_day) as day_of_year,
+
+    
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end - 1),
+        d.date_day
+        )
+
+ as date) as week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.date_day) = 7 then 1
+            else date_part('dayofweek', d.date_day) + 1
+        end - 1),
+        d.date_day
+        )
+
+ as date)
+        )
+
+ as date) as week_end_date,
+    
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.prior_year_over_year_date_day) = 7 then 1
+            else date_part('dayofweek', d.prior_year_over_year_date_day) + 1
+        end - 1),
+        d.prior_year_over_year_date_day
+        )
+
+ as date) as prior_year_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        
+    
+    cast(
+
+    dateadd(
+        day,
+        -1 * (case
+            when date_part('dayofweek', d.prior_year_over_year_date_day) = 7 then 1
+            else date_part('dayofweek', d.prior_year_over_year_date_day) + 1
+        end - 1),
+        d.prior_year_over_year_date_day
+        )
+
+ as date)
+        )
+
+ as date) as prior_year_week_end_date,
+    cast(date_part('week', d.date_day) as INT) as week_of_year,
+
+    cast(date_trunc('week', d.date_day) as date) as iso_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        cast(date_trunc('week', d.date_day) as date)
+        )
+
+ as date) as iso_week_end_date,
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) as prior_year_iso_week_start_date,
+    cast(
+
+    dateadd(
+        day,
+        6,
+        cast(date_trunc('week', d.prior_year_over_year_date_day) as date)
+        )
+
+ as date) as prior_year_iso_week_end_date,
+    cast(date_part('weekiso', d.date_day) as INT) as iso_week_of_year,
+
+    cast(date_part('week', d.prior_year_over_year_date_day) as INT) as prior_year_week_of_year,
+    cast(date_part('weekiso', d.prior_year_over_year_date_day) as INT) as prior_year_iso_week_of_year,
+
+    cast(date_part('month', d.date_day) as INT) as month_of_year,
+    to_char(d.date_day, 'MMMM')  as month_name,
+    to_char(d.date_day, 'MON')  as month_name_short,
+
+    cast(date_trunc('month', d.date_day) as date) as month_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        month,
+        1,
+        date_trunc('month', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as month_end_date,
+
+    cast(date_trunc('month', d.prior_year_date_day) as date) as prior_year_month_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        month,
+        1,
+        date_trunc('month', d.prior_year_date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as prior_year_month_end_date,
+
+    cast(date_part('quarter', d.date_day) as INT) as quarter_of_year,
+    cast(date_trunc('quarter', d.date_day) as date) as quarter_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        quarter,
+        1,
+        date_trunc('quarter', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as quarter_end_date,
+
+    cast(date_part('year', d.date_day) as INT) as year_number,
+    cast(date_trunc('year', d.date_day) as date) as year_start_date,
+    cast(cast(
+        
+
+    dateadd(
+        day,
+        -1,
+        
+
+    dateadd(
+        year,
+        1,
+        date_trunc('year', d.date_day)
+        )
+
+
+        )
+
+
+        as date) as date) as year_end_date
+from
+    dates_with_prior_year_dates d
+order by 1
+
+
+  );
+[0m12:33:12.145854 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:33:12.147853 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_date (execute): 2023-04-04 12:33:11.749911 => 2023-04-04 12:33:12.147853
+[0m12:33:12.147853 [debug] [Thread-1  ]: On model.Adventure_Works.stg_date: Close
+[0m12:33:12.358410 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E77A4B48>]}
+[0m12:33:12.359399 [info ] [Thread-1  ]: 10 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_date ..................... [[32mSUCCESS 1[0m in 2.18s]
+[0m12:33:12.360359 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_date
+[0m12:33:12.361360 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_employee
+[0m12:33:12.361360 [info ] [Thread-1  ]: 11 of 24 START sql view model AIRBYTE_SCHEMA.stg_employee ...................... [RUN]
+[0m12:33:12.363797 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_employee'
+[0m12:33:12.363797 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_employee
+[0m12:33:12.367840 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_employee"
+[0m12:33:12.369835 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_employee (compile): 2023-04-04 12:33:12.364799 => 2023-04-04 12:33:12.369835
+[0m12:33:12.369835 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_employee
+[0m12:33:12.379357 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_employee"
+[0m12:33:12.381356 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_employee"
+[0m12:33:12.381861 [debug] [Thread-1  ]: On model.Adventure_Works.stg_employee: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_employee"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_employee
+  
+   as (
+    with source_data as (
+    select
+        businessentityid,
+        gender
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.employee
+)
+select *
+from source_data
+  );
+[0m12:33:12.381861 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:13.769298 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:33:13.771800 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_employee (execute): 2023-04-04 12:33:12.371347 => 2023-04-04 12:33:13.771800
+[0m12:33:13.771800 [debug] [Thread-1  ]: On model.Adventure_Works.stg_employee: Close
+[0m12:33:14.009218 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E78A2AC8>]}
+[0m12:33:14.010219 [info ] [Thread-1  ]: 11 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_employee ................. [[32mSUCCESS 1[0m in 1.65s]
+[0m12:33:14.011726 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_employee
+[0m12:33:14.011726 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_product
+[0m12:33:14.012734 [info ] [Thread-1  ]: 12 of 24 START sql view model AIRBYTE_SCHEMA.stg_product ....................... [RUN]
+[0m12:33:14.013735 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_product'
+[0m12:33:14.014734 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_product
+[0m12:33:14.019736 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_product"
+[0m12:33:14.021740 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_product (compile): 2023-04-04 12:33:14.014734 => 2023-04-04 12:33:14.020738
+[0m12:33:14.022250 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_product
+[0m12:33:14.035941 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_product"
+[0m12:33:14.039941 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_product"
+[0m12:33:14.041518 [debug] [Thread-1  ]: On model.Adventure_Works.stg_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_product"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_product
+  
+   as (
+    with source_data as (
+    select
+        productid
+        , name as product_name
+        , safetystocklevel
+        , finishedgoodsflag
+        , class
+        , makeflag
+        , productnumber
+        , reorderpoint
+        , modifieddate
+        , rowguid
+        , productmodelid
+        , weightunitmeasurecode
+        , standardcost
+        , productsubcategoryid
+        , listprice
+        , daystomanufacture
+        , productline
+        , color
+        , sellstartdate
+        , weight as product_weight
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.product
+)
+select *
+from source_data
+  );
+[0m12:33:14.042461 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:15.639465 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:15.642989 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_product (execute): 2023-04-04 12:33:14.022250 => 2023-04-04 12:33:15.641982
+[0m12:33:15.642989 [debug] [Thread-1  ]: On model.Adventure_Works.stg_product: Close
+[0m12:33:15.840659 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7934BC8>]}
+[0m12:33:15.840659 [info ] [Thread-1  ]: 12 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_product .................. [[32mSUCCESS 1[0m in 1.83s]
+[0m12:33:15.842639 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_product
+[0m12:33:15.843643 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_salesorderdetail
+[0m12:33:15.843643 [info ] [Thread-1  ]: 13 of 24 START sql view model AIRBYTE_SCHEMA.stg_salesorderdetail .............. [RUN]
+[0m12:33:15.845645 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_salesorderdetail'
+[0m12:33:15.846667 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_salesorderdetail
+[0m12:33:15.849667 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_salesorderdetail"
+[0m12:33:15.851640 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesorderdetail (compile): 2023-04-04 12:33:15.846667 => 2023-04-04 12:33:15.850665
+[0m12:33:15.851640 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_salesorderdetail
+[0m12:33:15.859934 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_salesorderdetail"
+[0m12:33:15.863449 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_salesorderdetail"
+[0m12:33:15.863449 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_salesorderdetail"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderdetail
+  
+   as (
+    with source_data as (
+    select
+        salesorderid
+        , orderqty
+        , salesorderdetailid
+        , unitprice
+        , specialofferid
+        , modifieddate
+        , rowguid
+        , productid
+        , unitpricediscount
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderdetail
+)
+select *
+from source_data
+  );
+[0m12:33:15.864449 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:17.603102 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:17.606107 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesorderdetail (execute): 2023-04-04 12:33:15.852898 => 2023-04-04 12:33:17.605107
+[0m12:33:17.606107 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesorderdetail: Close
+[0m12:33:17.818038 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7928FC8>]}
+[0m12:33:17.819034 [info ] [Thread-1  ]: 13 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_salesorderdetail ......... [[32mSUCCESS 1[0m in 1.97s]
+[0m12:33:17.820071 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_salesorderdetail
+[0m12:33:17.820071 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_salesorderheader
+[0m12:33:17.821614 [info ] [Thread-1  ]: 14 of 24 START sql view model AIRBYTE_SCHEMA.stg_salesorderheader .............. [RUN]
+[0m12:33:17.822619 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_salesorderheader'
+[0m12:33:17.822619 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_salesorderheader
+[0m12:33:17.826664 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_salesorderheader"
+[0m12:33:17.828673 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesorderheader (compile): 2023-04-04 12:33:17.822619 => 2023-04-04 12:33:17.828673
+[0m12:33:17.829620 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_salesorderheader
+[0m12:33:17.836699 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_salesorderheader"
+[0m12:33:17.838698 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_salesorderheader"
+[0m12:33:17.839699 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_salesorderheader"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderheader
+  
+   as (
+    with source_data as (
+    select
+        salesorderid
+        , shipmethodid
+        , billtoaddressid
+        , modifieddate
+        , rowguid
+        , taxamt
+        , shiptoaddressid
+        , onlineorderflag
+        , territoryid
+        , status as order_status
+        , orderdate
+        , creditcardapprovalcode
+        , subtotal
+        , creditcardid
+        , currencyrateid
+        , revisionnumber
+        , freight
+        , duedate
+        , totaldue
+        , customerid
+        , salespersonid
+        , shipdate
+        , accountnumber
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+)
+select *
+from source_data
+  );
+[0m12:33:17.839699 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:19.450595 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:19.454873 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesorderheader (execute): 2023-04-04 12:33:17.829620 => 2023-04-04 12:33:19.454873
+[0m12:33:19.455399 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesorderheader: Close
+[0m12:33:19.650301 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E78D69C8>]}
+[0m12:33:19.651302 [info ] [Thread-1  ]: 14 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_salesorderheader ......... [[32mSUCCESS 1[0m in 1.83s]
+[0m12:33:19.652566 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_salesorderheader
+[0m12:33:19.653566 [debug] [Thread-1  ]: Began running node model.Adventure_Works.stg_salesperson_customer_based_on_gender
+[0m12:33:19.654569 [info ] [Thread-1  ]: 15 of 24 START sql view model AIRBYTE_SCHEMA.stg_salesperson_customer_based_on_gender  [RUN]
+[0m12:33:19.656567 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.stg_salesperson_customer_based_on_gender'
+[0m12:33:19.657565 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.stg_salesperson_customer_based_on_gender
+[0m12:33:19.662588 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.stg_salesperson_customer_based_on_gender"
+[0m12:33:19.663587 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesperson_customer_based_on_gender (compile): 2023-04-04 12:33:19.657565 => 2023-04-04 12:33:19.663587
+[0m12:33:19.663587 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.stg_salesperson_customer_based_on_gender
+[0m12:33:19.671590 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.stg_salesperson_customer_based_on_gender"
+[0m12:33:19.673737 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.stg_salesperson_customer_based_on_gender"
+[0m12:33:19.675239 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesperson_customer_based_on_gender: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.stg_salesperson_customer_based_on_gender"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesperson_customer_based_on_gender
+  
+   as (
+    --Find effectiveness of each sales person based on count of customers handling by grouping by gender and per salespersonid to provide meaningful insights to boost sales.
+with source_data as (
+    select
+        count_of_customers,
+		salesid,
+		gen
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesperson_customer_based_on_gender
+)
+select *
+from source_data
+  );
+[0m12:33:19.675239 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:21.218280 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:21.220277 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.stg_salesperson_customer_based_on_gender (execute): 2023-04-04 12:33:19.664588 => 2023-04-04 12:33:21.220277
+[0m12:33:21.220277 [debug] [Thread-1  ]: On model.Adventure_Works.stg_salesperson_customer_based_on_gender: Close
+[0m12:33:21.426514 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E77F1848>]}
+[0m12:33:21.427515 [info ] [Thread-1  ]: 15 of 24 OK created sql view model AIRBYTE_SCHEMA.stg_salesperson_customer_based_on_gender  [[32mSUCCESS 1[0m in 1.77s]
+[0m12:33:21.428478 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.stg_salesperson_customer_based_on_gender
+[0m12:33:21.429475 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_customer
+[0m12:33:21.430478 [info ] [Thread-1  ]: 16 of 24 START sql view model AIRBYTE_SCHEMA.dim_customer ...................... [RUN]
+[0m12:33:21.431481 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_customer'
+[0m12:33:21.431481 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_customer
+[0m12:33:21.438207 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_customer"
+[0m12:33:21.439207 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_customer (compile): 2023-04-04 12:33:21.431481 => 2023-04-04 12:33:21.439207
+[0m12:33:21.440208 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_customer
+[0m12:33:21.447735 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_customer"
+[0m12:33:21.449741 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_customer"
+[0m12:33:21.451255 [debug] [Thread-1  ]: On model.Adventure_Works.dim_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_customer"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_customer
+  
+   as (
+    with stg_customer as(
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_customer
+),
+transformed as(
+    select  md5(cast(coalesce(cast(stg_customer.customerid as TEXT), '') as TEXT)) as customer_key,
+        *
+    from stg_customer
+)
+
+select * 
+from transformed
+  );
+[0m12:33:21.451255 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:23.131574 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:23.133532 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_customer (execute): 2023-04-04 12:33:21.440208 => 2023-04-04 12:33:23.133532
+[0m12:33:23.133532 [debug] [Thread-1  ]: On model.Adventure_Works.dim_customer: Close
+[0m12:33:23.343581 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E789FA48>]}
+[0m12:33:23.343581 [info ] [Thread-1  ]: 16 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_customer ................. [[32mSUCCESS 1[0m in 1.91s]
+[0m12:33:23.345581 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_customer
+[0m12:33:23.345581 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_date
+[0m12:33:23.346620 [info ] [Thread-1  ]: 17 of 24 START sql view model AIRBYTE_SCHEMA.dim_date .......................... [RUN]
+[0m12:33:23.347581 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_date'
+[0m12:33:23.348582 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_date
+[0m12:33:23.353721 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_date"
+[0m12:33:23.355726 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_date (compile): 2023-04-04 12:33:23.348582 => 2023-04-04 12:33:23.355726
+[0m12:33:23.355726 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_date
+[0m12:33:23.361717 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_date"
+[0m12:33:23.364123 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_date"
+[0m12:33:23.365118 [debug] [Thread-1  ]: On model.Adventure_Works.dim_date: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_date"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_date
+  
+   as (
+    with stg_date as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_date
+)
+, transformed as (
+    select 
+        md5(cast(coalesce(cast(stg_date.date_day as TEXT), '') as TEXT)) as date_key,
+        *
+    from stg_date
+)
+
+select * 
+from transformed
+  );
+[0m12:33:23.365118 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:25.548434 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:25.551436 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_date (execute): 2023-04-04 12:33:23.356719 => 2023-04-04 12:33:25.551436
+[0m12:33:25.551436 [debug] [Thread-1  ]: On model.Adventure_Works.dim_date: Close
+[0m12:33:25.793564 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E782A9C8>]}
+[0m12:33:25.794564 [info ] [Thread-1  ]: 17 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_date ..................... [[32mSUCCESS 1[0m in 2.45s]
+[0m12:33:25.796565 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_date
+[0m12:33:25.797567 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_product
+[0m12:33:25.797567 [info ] [Thread-1  ]: 18 of 24 START sql view model AIRBYTE_SCHEMA.dim_product ....................... [RUN]
+[0m12:33:25.799568 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_product'
+[0m12:33:25.800564 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_product
+[0m12:33:25.810090 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_product"
+[0m12:33:25.812616 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_product (compile): 2023-04-04 12:33:25.801565 => 2023-04-04 12:33:25.812616
+[0m12:33:25.813613 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_product
+[0m12:33:25.829146 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_product"
+[0m12:33:25.833677 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_product"
+[0m12:33:25.833677 [debug] [Thread-1  ]: On model.Adventure_Works.dim_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_product"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_product
+  
+   as (
+    with stg_product as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_product
+)
+, transformed as (
+    select 
+        md5(cast(coalesce(cast(stg_product.productid as TEXT), '') as TEXT)) as product_key,
+        *
+    from stg_product
+)
+
+select * 
+from transformed
+  );
+[0m12:33:25.834676 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:27.477473 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:27.481470 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_product (execute): 2023-04-04 12:33:25.813613 => 2023-04-04 12:33:27.481470
+[0m12:33:27.481470 [debug] [Thread-1  ]: On model.Adventure_Works.dim_product: Close
+[0m12:33:27.678325 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E78869C8>]}
+[0m12:33:27.678325 [info ] [Thread-1  ]: 18 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_product .................. [[32mSUCCESS 1[0m in 1.88s]
+[0m12:33:27.680321 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_product
+[0m12:33:27.680321 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_sales
+[0m12:33:27.681324 [info ] [Thread-1  ]: 19 of 24 START sql view model AIRBYTE_SCHEMA.dim_sales ......................... [RUN]
+[0m12:33:27.682701 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_sales'
+[0m12:33:27.682701 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_sales
+[0m12:33:27.691211 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_sales"
+[0m12:33:27.693221 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_sales (compile): 2023-04-04 12:33:27.683701 => 2023-04-04 12:33:27.693221
+[0m12:33:27.694223 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_sales
+[0m12:33:27.703736 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_sales"
+[0m12:33:27.709748 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_sales"
+[0m12:33:27.709748 [debug] [Thread-1  ]: On model.Adventure_Works.dim_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_sales"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_sales
+  
+   as (
+    with salesorderheader as (
+    select
+        salesorderid,
+        customerid,
+        creditcardid,
+        shiptoaddressid,
+        order_status,
+        date(stg_salesorderheader.orderdate) as orderdate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderheader
+)
+
+, salesorderdetail as (
+    select
+        salesorderid,
+        salesorderdetailid,
+        productid,
+        orderqty,
+        unitprice
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderdetail
+)
+, final as (
+    select
+        md5(cast(coalesce(cast(salesorderdetail.salesorderid as TEXT), '') || '-' || coalesce(cast(salesorderdetailid as TEXT), '') as TEXT)) sales_id_key
+        , salesorderheader.customerid
+        , salesorderheader.creditcardid
+        , salesorderheader.shiptoaddressid
+        , salesorderheader.order_status
+        , salesorderheader.orderdate
+        , salesorderdetail.productid
+    from salesorderdetail
+    left join salesorderheader on salesorderdetail.salesorderid = salesorderheader.salesorderid
+)
+select *
+from final
+  );
+[0m12:33:27.709748 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:29.309671 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:29.312192 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_sales (execute): 2023-04-04 12:33:27.694223 => 2023-04-04 12:33:29.312192
+[0m12:33:29.313193 [debug] [Thread-1  ]: On model.Adventure_Works.dim_sales: Close
+[0m12:33:29.516815 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E6399F48>]}
+[0m12:33:29.517815 [info ] [Thread-1  ]: 19 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_sales .................... [[32mSUCCESS 1[0m in 1.84s]
+[0m12:33:29.519814 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_sales
+[0m12:33:29.521327 [debug] [Thread-1  ]: Began running node model.Adventure_Works.fct_sales
+[0m12:33:29.522337 [info ] [Thread-1  ]: 20 of 24 START sql view model AIRBYTE_SCHEMA.fct_sales ......................... [RUN]
+[0m12:33:29.525337 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.fct_sales'
+[0m12:33:29.526335 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.fct_sales
+[0m12:33:29.555081 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.fct_sales"
+[0m12:33:29.557080 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales (compile): 2023-04-04 12:33:29.526335 => 2023-04-04 12:33:29.557080
+[0m12:33:29.558081 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.fct_sales
+[0m12:33:29.572131 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.fct_sales"
+[0m12:33:29.580158 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales"
+[0m12:33:29.580158 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales
+  
+   as (
+    with salesorderheader as (
+    select
+        salesorderid,
+        customerid,
+        creditcardid,
+        shiptoaddressid,
+        order_status,
+        date(stg_salesorderheader.orderdate) as orderdate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderheader
+)
+
+, salesorderdetail as (
+    select
+        salesorderid,
+        salesorderdetailid,
+        productid,
+        orderqty,
+        unitprice,
+        unitprice * orderqty as qty_price
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderdetail
+)
+, final as (
+    select
+        md5(cast(coalesce(cast(salesorderdetail.salesorderid as TEXT), '') as TEXT)) sales_key
+        , md5(cast(coalesce(cast(productid as TEXT), '') as TEXT)) as product_key
+        , md5(cast(coalesce(cast(creditcardid as TEXT), '') as TEXT)) as creditcard_key
+        , md5(cast(coalesce(cast(shiptoaddressid as TEXT), '') as TEXT)) as ship_address_key
+        , md5(cast(coalesce(cast(order_status as TEXT), '') as TEXT)) as order_status_key
+        , md5(cast(coalesce(cast(orderdate as TEXT), '') as TEXT)) as order_date_key
+        , md5(cast(coalesce(cast(customerid as TEXT), '') as TEXT)) as customer_key
+        , salesorderdetail.salesorderdetailid
+        , salesorderdetail.unitprice
+        , salesorderdetail.orderqty
+        , salesorderdetail.qty_price
+    from salesorderdetail
+    left join salesorderheader on salesorderdetail.salesorderid = salesorderheader.salesorderid
+)
+select *
+from final
+  );
+[0m12:33:29.581156 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:31.169994 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:31.171537 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales (execute): 2023-04-04 12:33:29.559082 => 2023-04-04 12:33:31.171537
+[0m12:33:31.171537 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales: Close
+[0m12:33:31.365522 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7934288>]}
+[0m12:33:31.366524 [info ] [Thread-1  ]: 20 of 24 OK created sql view model AIRBYTE_SCHEMA.fct_sales .................... [[32mSUCCESS 1[0m in 1.84s]
+[0m12:33:31.367524 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.fct_sales
+[0m12:33:31.368525 [debug] [Thread-1  ]: Began running node model.Adventure_Works.fct_sales_incr
+[0m12:33:31.368525 [info ] [Thread-1  ]: 21 of 24 START sql incremental model AIRBYTE_SCHEMA.fct_sales_incr ............. [RUN]
+[0m12:33:31.369524 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.fct_sales_incr'
+[0m12:33:31.370525 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.fct_sales_incr
+[0m12:33:31.388550 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.fct_sales_incr"
+[0m12:33:31.390550 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales_incr (compile): 2023-04-04 12:33:31.370525 => 2023-04-04 12:33:31.390550
+[0m12:33:31.391549 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.fct_sales_incr
+[0m12:33:31.458437 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:31.459439 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+create or replace  temporary view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr__dbt_tmp
+  
+   as (
+    
+
+with salesorderheader as (
+    select
+        salesorderid,
+        customerid,
+        creditcardid,
+        shiptoaddressid,
+        order_status,
+        modifieddate,
+        date(stg_salesorderheader.orderdate) as orderdate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderheader
+)
+
+, salesorderdetail as (
+    select
+        salesorderid,
+        salesorderdetailid,
+        productid,
+        orderqty,
+        unitprice,
+        unitprice * orderqty as qty_price
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderdetail
+)
+, final as (
+    select
+        md5(cast(coalesce(cast(salesorderdetail.salesorderid as TEXT), '') as TEXT)) sales_key
+        , md5(cast(coalesce(cast(productid as TEXT), '') as TEXT)) as product_key
+        ,md5(cast(coalesce(cast(customerid as TEXT), '') as TEXT)) as customer_key 
+        , md5(cast(coalesce(cast(creditcardid as TEXT), '') as TEXT)) as creditcard_key
+        , md5(cast(coalesce(cast(shiptoaddressid as TEXT), '') as TEXT)) as ship_address_key
+        , md5(cast(coalesce(cast(order_status as TEXT), '') as TEXT)) as order_status_key
+        , md5(cast(coalesce(cast(orderdate as TEXT), '') as TEXT)) as order_date_key
+        , salesorderdetail.salesorderdetailid
+        , salesorderdetail.unitprice
+        , salesorderdetail.orderqty
+        , salesorderdetail.qty_price
+        , salesorderheader.modifieddate
+    from salesorderdetail
+    left join salesorderheader on salesorderdetail.salesorderid = salesorderheader.salesorderid
+)
+select *
+from final
+
+
+    where modifieddate > (select max(modifieddate) from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr)
+
+  );
+[0m12:33:31.459439 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:33.619919 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:33.691869 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:33.692877 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr__dbt_tmp
+[0m12:33:33.813202 [debug] [Thread-1  ]: SQL status: SUCCESS 12 in 0 seconds
+[0m12:33:33.818207 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:33.819207 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr
+[0m12:33:33.960403 [debug] [Thread-1  ]: SQL status: SUCCESS 12 in 0 seconds
+[0m12:33:33.982871 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:33.983872 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr__dbt_tmp
+[0m12:33:34.117232 [debug] [Thread-1  ]: SQL status: SUCCESS 12 in 0 seconds
+[0m12:33:34.126754 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:34.126754 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."FCT_SALES_INCR"
+[0m12:33:34.246523 [debug] [Thread-1  ]: SQL status: SUCCESS 12 in 0 seconds
+[0m12:33:34.276765 [debug] [Thread-1  ]: 
+    In "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."FCT_SALES_INCR":
+        Schema changed: False
+        Source columns not in target: []
+        Target columns not in source: []
+        New column types: []
+  
+[0m12:33:34.365877 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.fct_sales_incr"
+[0m12:33:34.369881 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:34.369881 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:33:34.498047 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:33:34.499048 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:34.500050 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+merge into AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr as DBT_INTERNAL_DEST
+        using AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr__dbt_tmp as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.modifieddate = DBT_INTERNAL_DEST.modifieddate
+            )
+
+    
+    when matched then update set
+        "SALES_KEY" = DBT_INTERNAL_SOURCE."SALES_KEY","PRODUCT_KEY" = DBT_INTERNAL_SOURCE."PRODUCT_KEY","CUSTOMER_KEY" = DBT_INTERNAL_SOURCE."CUSTOMER_KEY","CREDITCARD_KEY" = DBT_INTERNAL_SOURCE."CREDITCARD_KEY","SHIP_ADDRESS_KEY" = DBT_INTERNAL_SOURCE."SHIP_ADDRESS_KEY","ORDER_STATUS_KEY" = DBT_INTERNAL_SOURCE."ORDER_STATUS_KEY","ORDER_DATE_KEY" = DBT_INTERNAL_SOURCE."ORDER_DATE_KEY","SALESORDERDETAILID" = DBT_INTERNAL_SOURCE."SALESORDERDETAILID","UNITPRICE" = DBT_INTERNAL_SOURCE."UNITPRICE","ORDERQTY" = DBT_INTERNAL_SOURCE."ORDERQTY","QTY_PRICE" = DBT_INTERNAL_SOURCE."QTY_PRICE","MODIFIEDDATE" = DBT_INTERNAL_SOURCE."MODIFIEDDATE"
+    
+
+    when not matched then insert
+        ("SALES_KEY", "PRODUCT_KEY", "CUSTOMER_KEY", "CREDITCARD_KEY", "SHIP_ADDRESS_KEY", "ORDER_STATUS_KEY", "ORDER_DATE_KEY", "SALESORDERDETAILID", "UNITPRICE", "ORDERQTY", "QTY_PRICE", "MODIFIEDDATE")
+    values
+        ("SALES_KEY", "PRODUCT_KEY", "CUSTOMER_KEY", "CREDITCARD_KEY", "SHIP_ADDRESS_KEY", "ORDER_STATUS_KEY", "ORDER_DATE_KEY", "SALESORDERDETAILID", "UNITPRICE", "ORDERQTY", "QTY_PRICE", "MODIFIEDDATE")
+
+;
+[0m12:33:36.114795 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 2 seconds
+[0m12:33:36.115794 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:36.115794 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+COMMIT
+[0m12:33:36.301298 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:33:36.311354 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_incr"
+[0m12:33:36.311354 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_incr"} */
+drop view if exists AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_incr__dbt_tmp cascade
+[0m12:33:36.435820 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:33:36.438829 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales_incr (execute): 2023-04-04 12:33:31.391549 => 2023-04-04 12:33:36.438829
+[0m12:33:36.438829 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_incr: Close
+[0m12:33:36.646860 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7918088>]}
+[0m12:33:36.646860 [info ] [Thread-1  ]: 21 of 24 OK created sql incremental model AIRBYTE_SCHEMA.fct_sales_incr ........ [[32mSUCCESS 0[0m in 5.28s]
+[0m12:33:36.648860 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.fct_sales_incr
+[0m12:33:36.649862 [debug] [Thread-1  ]: Began running node model.Adventure_Works.fct_sales_scd2
+[0m12:33:36.649862 [info ] [Thread-1  ]: 22 of 24 START sql view model AIRBYTE_SCHEMA.fct_sales_scd2 .................... [RUN]
+[0m12:33:36.651380 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.fct_sales_scd2'
+[0m12:33:36.652386 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.fct_sales_scd2
+[0m12:33:36.664883 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.fct_sales_scd2"
+[0m12:33:36.665881 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales_scd2 (compile): 2023-04-04 12:33:36.652386 => 2023-04-04 12:33:36.665881
+[0m12:33:36.666885 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.fct_sales_scd2
+[0m12:33:36.673483 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.fct_sales_scd2"
+[0m12:33:36.679521 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.fct_sales_scd2"
+[0m12:33:36.679521 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_scd2: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.fct_sales_scd2"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales_scd2
+  
+   as (
+    with salesorderheader as (
+    select
+        salesorderid
+        , customerid
+        , creditcardid
+        , shiptoaddressid
+        , order_status
+        , date(stg_salesorderheader.orderdate) orderdate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderheader 
+)
+
+, salesorderdetail as (
+    select
+        salesorderid
+        , salesorderdetailid
+        , productid
+        , orderqty
+        , unitprice
+        , unitprice * orderqty  as  revenue_wo_taxandfreight
+        , modifieddate
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesorderdetail
+)
+
+, snp_product as ( 
+    select *
+    from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.snp_product
+)
+
+, salesorderdetail_product as (
+    select 
+        row_number() over (partition by salesorderdetail.salesorderdetailid order by salesorderdetail.modifieddate desc) as latest_row
+        , salesorderid
+        , salesorderdetailid
+        , salesorderdetail.productid
+        , orderqty
+        , unitprice
+        , salesorderdetail.modifieddate
+        , snp_product.dbt_valid_from as product_valid_from
+        , snp_product.dbt_valid_to as product_valid_to
+    from salesorderdetail
+    left join snp_product on salesorderdetail.productid = snp_product.productid 
+        and salesorderdetail.modifieddate between snp_product.dbt_valid_from and coalesce(snp_product.dbt_valid_to, '2999-01-01')
+)
+
+/* We then join salesorderdetail and salesorderheader to get the final fact table*/
+, final as (
+    select
+        md5(cast(coalesce(cast(salesorderdetail_product.salesorderid as TEXT), '') || '-' || coalesce(cast(salesorderdetailid as TEXT), '') as TEXT)) sales_key
+        , md5(cast(coalesce(cast(productid as TEXT), '') || '-' || coalesce(cast(product_valid_from as TEXT), '') || '-' || coalesce(cast(product_valid_to as TEXT), '') as TEXT)) as product_key
+        , md5(cast(coalesce(cast(customerid as TEXT), '') as TEXT)) as customer_key 
+        , md5(cast(coalesce(cast(creditcardid as TEXT), '') as TEXT)) as creditcard_key
+        , md5(cast(coalesce(cast(shiptoaddressid as TEXT), '') as TEXT)) as ship_address_key
+        , md5(cast(coalesce(cast(order_status as TEXT), '') as TEXT)) as order_status_key
+        , md5(cast(coalesce(cast(orderdate as TEXT), '') as TEXT)) as order_date_key
+        , salesorderdetail_product.productid
+        , salesorderdetail_product.modifieddate
+        , salesorderdetail_product.product_valid_from
+        , salesorderdetail_product.product_valid_to
+        , salesorderdetail_product.salesorderid
+        , salesorderdetail_product.salesorderdetailid
+        , salesorderdetail_product.unitprice
+        , salesorderdetail_product.orderqty
+    from salesorderdetail_product
+    left join salesorderheader on salesorderdetail_product.salesorderid = salesorderheader.salesorderid
+    where salesorderdetail_product.latest_row = 1 
+)
+
+select *
+from final
+  );
+[0m12:33:36.680520 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:38.143608 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:33:38.145574 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.fct_sales_scd2 (execute): 2023-04-04 12:33:36.666885 => 2023-04-04 12:33:38.145574
+[0m12:33:38.146576 [debug] [Thread-1  ]: On model.Adventure_Works.fct_sales_scd2: Close
+[0m12:33:38.362658 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7A2A1C8>]}
+[0m12:33:38.363661 [info ] [Thread-1  ]: 22 of 24 OK created sql view model AIRBYTE_SCHEMA.fct_sales_scd2 ............... [[32mSUCCESS 1[0m in 1.71s]
+[0m12:33:38.365658 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.fct_sales_scd2
+[0m12:33:38.365658 [debug] [Thread-1  ]: Began running node model.Adventure_Works.dim_salesperson_customer_based_on_gender
+[0m12:33:38.366661 [info ] [Thread-1  ]: 23 of 24 START sql view model AIRBYTE_SCHEMA.dim_salesperson_customer_based_on_gender  [RUN]
+[0m12:33:38.367662 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.dim_salesperson_customer_based_on_gender'
+[0m12:33:38.368660 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.dim_salesperson_customer_based_on_gender
+[0m12:33:38.376248 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.dim_salesperson_customer_based_on_gender"
+[0m12:33:38.377312 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesperson_customer_based_on_gender (compile): 2023-04-04 12:33:38.368660 => 2023-04-04 12:33:38.377312
+[0m12:33:38.377864 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.dim_salesperson_customer_based_on_gender
+[0m12:33:38.389140 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.dim_salesperson_customer_based_on_gender"
+[0m12:33:38.393658 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.dim_salesperson_customer_based_on_gender"
+[0m12:33:38.394668 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesperson_customer_based_on_gender: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.dim_salesperson_customer_based_on_gender"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_salesperson_customer_based_on_gender
+  
+   as (
+    --Find effectiveness of each sales person based on count of customers handling by grouping by gender and per salespersonid to provide meaningful insights to boost sales.
+
+with stg_salesperson_customer_based_on_gender as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.stg_salesperson_customer_based_on_gender
+)
+,transformed as (
+    select 
+        md5(cast(coalesce(cast(stg_salesperson_customer_based_on_gender.salesid as TEXT), '') as TEXT)) as business_key,
+		*
+    from stg_salesperson_customer_based_on_gender
+)
+
+select * 
+from transformed
+  );
+[0m12:33:38.394668 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:40.371491 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:40.374050 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.dim_salesperson_customer_based_on_gender (execute): 2023-04-04 12:33:38.378491 => 2023-04-04 12:33:40.374050
+[0m12:33:40.374050 [debug] [Thread-1  ]: On model.Adventure_Works.dim_salesperson_customer_based_on_gender: Close
+[0m12:33:40.581434 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E790F108>]}
+[0m12:33:40.582376 [info ] [Thread-1  ]: 23 of 24 OK created sql view model AIRBYTE_SCHEMA.dim_salesperson_customer_based_on_gender  [[32mSUCCESS 1[0m in 2.21s]
+[0m12:33:40.583377 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.dim_salesperson_customer_based_on_gender
+[0m12:33:40.584385 [debug] [Thread-1  ]: Began running node model.Adventure_Works.obt_sales
+[0m12:33:40.585385 [info ] [Thread-1  ]: 24 of 24 START sql view model AIRBYTE_SCHEMA.obt_sales ......................... [RUN]
+[0m12:33:40.587385 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.Adventure_Works.obt_sales'
+[0m12:33:40.588385 [debug] [Thread-1  ]: Began compiling node model.Adventure_Works.obt_sales
+[0m12:33:40.625479 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.obt_sales"
+[0m12:33:40.625479 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.obt_sales"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales
+[0m12:33:40.626476 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:33:42.259647 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 2 seconds
+[0m12:33:42.270174 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.obt_sales"
+[0m12:33:42.271173 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.obt_sales"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_product
+[0m12:33:42.400187 [debug] [Thread-1  ]: SQL status: SUCCESS 21 in 0 seconds
+[0m12:33:42.416745 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.obt_sales"
+[0m12:33:42.416745 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.obt_sales"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_customer
+[0m12:33:42.543169 [debug] [Thread-1  ]: SQL status: SUCCESS 5 in 0 seconds
+[0m12:33:42.556228 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.obt_sales"
+[0m12:33:42.557232 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.obt_sales"} */
+describe table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_date
+[0m12:33:42.708106 [debug] [Thread-1  ]: SQL status: SUCCESS 37 in 0 seconds
+[0m12:33:42.720628 [debug] [Thread-1  ]: Writing injected SQL for node "model.Adventure_Works.obt_sales"
+[0m12:33:42.722729 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.obt_sales (compile): 2023-04-04 12:33:40.588385 => 2023-04-04 12:33:42.722729
+[0m12:33:42.723735 [debug] [Thread-1  ]: Began executing node model.Adventure_Works.obt_sales
+[0m12:33:42.735274 [debug] [Thread-1  ]: Writing runtime sql for node "model.Adventure_Works.obt_sales"
+[0m12:33:42.743502 [debug] [Thread-1  ]: Using snowflake connection "model.Adventure_Works.obt_sales"
+[0m12:33:42.744505 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "model.Adventure_Works.obt_sales"} */
+create or replace   view AIRBYTE_DATABASE.AIRBYTE_SCHEMA.obt_sales
+  
+   as (
+    with fct_sales as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.fct_sales
+)
+, dim_customers as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_customer
+)
+, dim_products as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_product
+)
+, dim_date as (
+    select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.dim_date
+)
+, obt as (
+    select
+         fct_sales."SALESORDERDETAILID",
+  fct_sales."UNITPRICE",
+  fct_sales."ORDERQTY",
+  fct_sales."QTY_PRICE"
+         , dim_product."PRODUCTID",
+  dim_product."PRODUCT_NAME",
+  dim_product."SAFETYSTOCKLEVEL",
+  dim_product."FINISHEDGOODSFLAG",
+  dim_product."CLASS",
+  dim_product."MAKEFLAG",
+  dim_product."PRODUCTNUMBER",
+  dim_product."REORDERPOINT",
+  dim_product."MODIFIEDDATE",
+  dim_product."ROWGUID",
+  dim_product."PRODUCTMODELID",
+  dim_product."WEIGHTUNITMEASURECODE",
+  dim_product."STANDARDCOST",
+  dim_product."PRODUCTSUBCATEGORYID",
+  dim_product."LISTPRICE",
+  dim_product."DAYSTOMANUFACTURE",
+  dim_product."PRODUCTLINE",
+  dim_product."COLOR",
+  dim_product."SELLSTARTDATE",
+  dim_product."PRODUCT_WEIGHT"
+         , dim_customer."CUSTOMERID",
+  dim_customer."PERSONID",
+  dim_customer."STOREID",
+  dim_customer."TERRITORYID"
+         , dim_date."DATE_DAY",
+  dim_date."PRIOR_DATE_DAY",
+  dim_date."NEXT_DATE_DAY",
+  dim_date."PRIOR_YEAR_DATE_DAY",
+  dim_date."PRIOR_YEAR_OVER_YEAR_DATE_DAY",
+  dim_date."DAY_OF_WEEK",
+  dim_date."DAY_OF_WEEK_ISO",
+  dim_date."DAY_OF_WEEK_NAME",
+  dim_date."DAY_OF_WEEK_NAME_SHORT",
+  dim_date."DAY_OF_MONTH",
+  dim_date."DAY_OF_YEAR",
+  dim_date."WEEK_START_DATE",
+  dim_date."WEEK_END_DATE",
+  dim_date."PRIOR_YEAR_WEEK_START_DATE",
+  dim_date."PRIOR_YEAR_WEEK_END_DATE",
+  dim_date."WEEK_OF_YEAR",
+  dim_date."ISO_WEEK_START_DATE",
+  dim_date."ISO_WEEK_END_DATE",
+  dim_date."PRIOR_YEAR_ISO_WEEK_START_DATE",
+  dim_date."PRIOR_YEAR_ISO_WEEK_END_DATE",
+  dim_date."ISO_WEEK_OF_YEAR",
+  dim_date."PRIOR_YEAR_WEEK_OF_YEAR",
+  dim_date."PRIOR_YEAR_ISO_WEEK_OF_YEAR",
+  dim_date."MONTH_OF_YEAR",
+  dim_date."MONTH_NAME",
+  dim_date."MONTH_NAME_SHORT",
+  dim_date."MONTH_START_DATE",
+  dim_date."MONTH_END_DATE",
+  dim_date."PRIOR_YEAR_MONTH_START_DATE",
+  dim_date."PRIOR_YEAR_MONTH_END_DATE",
+  dim_date."QUARTER_OF_YEAR",
+  dim_date."QUARTER_START_DATE",
+  dim_date."QUARTER_END_DATE",
+  dim_date."YEAR_NUMBER",
+  dim_date."YEAR_START_DATE",
+  dim_date."YEAR_END_DATE"
+    from fct_sales
+    left join dim_product on fct_sales.product_key = dim_product.product_key 
+    left join dim_customer on fct_sales.customer_key = dim_customer.customer_key 
+    left join dim_date on fct_sales.order_date_key = dim_date.date_key 
+)
+
+select * 
+from obt
+  );
+[0m12:33:44.820480 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:33:44.822735 [debug] [Thread-1  ]: Timing info for model.Adventure_Works.obt_sales (execute): 2023-04-04 12:33:42.723735 => 2023-04-04 12:33:44.822735
+[0m12:33:44.822735 [debug] [Thread-1  ]: On model.Adventure_Works.obt_sales: Close
+[0m12:33:45.049976 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f14717e2-ca37-4757-995c-0ce903a4ea06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7893688>]}
+[0m12:33:46.552341 [info ] [Thread-1  ]: 24 of 24 OK created sql view model AIRBYTE_SCHEMA.obt_sales .................... [[32mSUCCESS 1[0m in 4.46s]
+[0m12:33:46.554343 [debug] [Thread-1  ]: Finished running node model.Adventure_Works.obt_sales
+[0m12:33:46.664057 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:33:46.665058 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:33:46.666057 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+[0m12:33:46.666057 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+[0m12:33:46.666057 [debug] [MainThread]: Connection 'model.Adventure_Works.obt_sales' was properly closed.
+[0m12:33:46.667057 [info ] [MainThread]: 
+[0m12:33:46.668061 [info ] [MainThread]: Finished running 21 view models, 2 table models, 1 incremental model in 0 hours 1 minutes and 2.80 seconds (62.80s).
+[0m12:33:46.672608 [debug] [MainThread]: Command end result
+[0m12:33:46.706041 [info ] [MainThread]: 
+[0m12:33:46.708040 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:33:46.710040 [info ] [MainThread]: 
+[0m12:33:46.711549 [info ] [MainThread]: Done. PASS=24 WARN=0 ERROR=0 SKIP=0 TOTAL=24
+[0m12:33:46.712560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E7829388>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E757F388>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4E757FB48>]}
+[0m12:33:46.713559 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-04 12:37:27.147473 | 4135160a-1a31-4937-9b9e-0778421bdbff ==============================
+[0m12:37:27.147473 [info ] [MainThread]: Running with dbt=1.4.4
+[0m12:37:27.149431 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\Adventure_works_ETL_snowflake\\Adventure_works_ETL_snowflake\\Adventure_Works', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'snapshot', 'rpc_method': 'snapshot', 'indirect_selection': 'eager'}
+[0m12:37:27.150431 [debug] [MainThread]: Tracking: tracking
+[0m12:37:27.150937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A10E508>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A10FB48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A10FD08>]}
+[0m12:37:27.192554 [debug] [MainThread]: checksum: 170d819e8a7f11e09c497566dd7f61e1355cb9fb514921503937b951cb4a2250, vars: {}, profile: None, target: None, version: 1.4.4
+[0m12:37:27.428352 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:37:27.428352 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:37:27.429350 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.Adventure_Works.example
+[0m12:37:27.450421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A1CD048>]}
+[0m12:37:27.481359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A2F61C8>]}
+[0m12:37:27.481890 [info ] [MainThread]: Found 24 models, 14 tests, 4 snapshots, 0 analyses, 598 macros, 0 operations, 0 seed files, 15 sources, 0 exposures, 0 metrics
+[0m12:37:27.483015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A318288>]}
+[0m12:37:27.486200 [info ] [MainThread]: 
+[0m12:37:27.488722 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:37:27.490724 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBYTE_DATABASE'
+[0m12:37:27.518060 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+[0m12:37:27.519063 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE"} */
+show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+[0m12:37:27.519063 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:37:29.418156 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2 seconds
+[0m12:37:29.419157 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+[0m12:37:29.636971 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA'
+[0m12:37:29.650496 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+[0m12:37:29.651002 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+[0m12:37:29.652010 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:37:31.308560 [debug] [ThreadPool]: SQL status: SUCCESS 198 in 2 seconds
+[0m12:37:31.317080 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+[0m12:37:31.563409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032A1C2A48>]}
+[0m12:37:31.566407 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:37:31.567409 [info ] [MainThread]: 
+[0m12:37:31.573653 [debug] [Thread-1  ]: Began running node snapshot.Adventure_Works.snp_customer
+[0m12:37:31.575213 [info ] [Thread-1  ]: 1 of 4 START snapshot AIRBYTE_SCHEMA.snp_customer .............................. [RUN]
+[0m12:37:31.577219 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.Adventure_Works.snp_customer'
+[0m12:37:31.578218 [debug] [Thread-1  ]: Began compiling node snapshot.Adventure_Works.snp_customer
+[0m12:37:31.585730 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_customer (compile): 2023-04-04 12:37:31.578218 => 2023-04-04 12:37:31.584729
+[0m12:37:31.585730 [debug] [Thread-1  ]: Began executing node snapshot.Adventure_Works.snp_customer
+[0m12:37:31.730415 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:31.730415 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+select * from (
+            
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.customer
+
+        ) as __dbt_sbq
+        where false
+        limit 0
+[0m12:37:31.730415 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m12:37:33.426915 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 2 seconds
+[0m12:37:33.440440 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:33.440440 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER"
+[0m12:37:33.564143 [debug] [Thread-1  ]: SQL status: SUCCESS 14 in 0 seconds
+[0m12:37:33.581195 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:33.581195 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER"
+[0m12:37:33.711671 [debug] [Thread-1  ]: SQL status: SUCCESS 14 in 0 seconds
+[0m12:37:33.764317 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:33.764317 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+create or replace temporary table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER__dbt_tmp"  as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.customer
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            customerid as dbt_unique_key
+
+        from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            customerid as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to,
+            md5(coalesce(cast(customerid as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            customerid as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data."ROWGUID" != source_data."ROWGUID"
+        or
+        (
+            ((snapshotted_data."ROWGUID" is null) and not (source_data."ROWGUID" is null))
+            or
+            ((not snapshotted_data."ROWGUID" is null) and (source_data."ROWGUID" is null))
+        ) or snapshotted_data."STOREID" != source_data."STOREID"
+        or
+        (
+            ((snapshotted_data."STOREID" is null) and not (source_data."STOREID" is null))
+            or
+            ((not snapshotted_data."STOREID" is null) and (source_data."STOREID" is null))
+        ) or snapshotted_data."PERSONID" != source_data."PERSONID"
+        or
+        (
+            ((snapshotted_data."PERSONID" is null) and not (source_data."PERSONID" is null))
+            or
+            ((not snapshotted_data."PERSONID" is null) and (source_data."PERSONID" is null))
+        ) or snapshotted_data."CUSTOMERID" != source_data."CUSTOMERID"
+        or
+        (
+            ((snapshotted_data."CUSTOMERID" is null) and not (source_data."CUSTOMERID" is null))
+            or
+            ((not snapshotted_data."CUSTOMERID" is null) and (source_data."CUSTOMERID" is null))
+        ) or snapshotted_data."TERRITORYID" != source_data."TERRITORYID"
+        or
+        (
+            ((snapshotted_data."TERRITORYID" is null) and not (source_data."TERRITORYID" is null))
+            or
+            ((not snapshotted_data."TERRITORYID" is null) and (source_data."TERRITORYID" is null))
+        ) or snapshotted_data."MODIFIEDDATE" != source_data."MODIFIEDDATE"
+        or
+        (
+            ((snapshotted_data."MODIFIEDDATE" is null) and not (source_data."MODIFIEDDATE" is null))
+            or
+            ((not snapshotted_data."MODIFIEDDATE" is null) and (source_data."MODIFIEDDATE" is null))
+        ) or snapshotted_data."_AIRBYTE_AB_ID" != source_data."_AIRBYTE_AB_ID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_AB_ID" is null) and not (source_data."_AIRBYTE_AB_ID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_AB_ID" is null) and (source_data."_AIRBYTE_AB_ID" is null))
+        ) or snapshotted_data."_AIRBYTE_EMITTED_AT" != source_data."_AIRBYTE_EMITTED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and not (source_data."_AIRBYTE_EMITTED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and (source_data."_AIRBYTE_EMITTED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_NORMALIZED_AT" != source_data."_AIRBYTE_NORMALIZED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and not (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" != source_data."_AIRBYTE_CUSTOMER_HASHID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" is null) and not (source_data."_AIRBYTE_CUSTOMER_HASHID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" is null) and (source_data."_AIRBYTE_CUSTOMER_HASHID" is null))
+        ))
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data."ROWGUID" != source_data."ROWGUID"
+        or
+        (
+            ((snapshotted_data."ROWGUID" is null) and not (source_data."ROWGUID" is null))
+            or
+            ((not snapshotted_data."ROWGUID" is null) and (source_data."ROWGUID" is null))
+        ) or snapshotted_data."STOREID" != source_data."STOREID"
+        or
+        (
+            ((snapshotted_data."STOREID" is null) and not (source_data."STOREID" is null))
+            or
+            ((not snapshotted_data."STOREID" is null) and (source_data."STOREID" is null))
+        ) or snapshotted_data."PERSONID" != source_data."PERSONID"
+        or
+        (
+            ((snapshotted_data."PERSONID" is null) and not (source_data."PERSONID" is null))
+            or
+            ((not snapshotted_data."PERSONID" is null) and (source_data."PERSONID" is null))
+        ) or snapshotted_data."CUSTOMERID" != source_data."CUSTOMERID"
+        or
+        (
+            ((snapshotted_data."CUSTOMERID" is null) and not (source_data."CUSTOMERID" is null))
+            or
+            ((not snapshotted_data."CUSTOMERID" is null) and (source_data."CUSTOMERID" is null))
+        ) or snapshotted_data."TERRITORYID" != source_data."TERRITORYID"
+        or
+        (
+            ((snapshotted_data."TERRITORYID" is null) and not (source_data."TERRITORYID" is null))
+            or
+            ((not snapshotted_data."TERRITORYID" is null) and (source_data."TERRITORYID" is null))
+        ) or snapshotted_data."MODIFIEDDATE" != source_data."MODIFIEDDATE"
+        or
+        (
+            ((snapshotted_data."MODIFIEDDATE" is null) and not (source_data."MODIFIEDDATE" is null))
+            or
+            ((not snapshotted_data."MODIFIEDDATE" is null) and (source_data."MODIFIEDDATE" is null))
+        ) or snapshotted_data."_AIRBYTE_AB_ID" != source_data."_AIRBYTE_AB_ID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_AB_ID" is null) and not (source_data."_AIRBYTE_AB_ID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_AB_ID" is null) and (source_data."_AIRBYTE_AB_ID" is null))
+        ) or snapshotted_data."_AIRBYTE_EMITTED_AT" != source_data."_AIRBYTE_EMITTED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and not (source_data."_AIRBYTE_EMITTED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and (source_data."_AIRBYTE_EMITTED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_NORMALIZED_AT" != source_data."_AIRBYTE_NORMALIZED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and not (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" != source_data."_AIRBYTE_CUSTOMER_HASHID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" is null) and not (source_data."_AIRBYTE_CUSTOMER_HASHID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_CUSTOMER_HASHID" is null) and (source_data."_AIRBYTE_CUSTOMER_HASHID" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m12:37:36.504831 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3 seconds
+[0m12:37:36.508833 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:36.509862 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER__dbt_tmp"
+[0m12:37:36.633493 [debug] [Thread-1  ]: SQL status: SUCCESS 16 in 0 seconds
+[0m12:37:36.639494 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:36.640493 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER"
+[0m12:37:36.752278 [debug] [Thread-1  ]: SQL status: SUCCESS 14 in 0 seconds
+[0m12:37:36.757321 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:36.757321 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER__dbt_tmp"
+[0m12:37:36.893717 [debug] [Thread-1  ]: SQL status: SUCCESS 16 in 0 seconds
+[0m12:37:36.904057 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:36.905056 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER"
+[0m12:37:37.013717 [debug] [Thread-1  ]: SQL status: SUCCESS 14 in 0 seconds
+[0m12:37:37.033780 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:37.034780 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER__dbt_tmp"
+[0m12:37:37.141828 [debug] [Thread-1  ]: SQL status: SUCCESS 16 in 0 seconds
+[0m12:37:37.155364 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.Adventure_Works.snp_customer"
+[0m12:37:37.159362 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:37.160869 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+BEGIN
+[0m12:37:37.338185 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:37.339179 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:37.339179 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+merge into "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER" as DBT_INTERNAL_DEST
+    using "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_CUSTOMER__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("ROWGUID", "STOREID", "PERSONID", "CUSTOMERID", "TERRITORYID", "MODIFIEDDATE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_CUSTOMER_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("ROWGUID", "STOREID", "PERSONID", "CUSTOMERID", "TERRITORYID", "MODIFIEDDATE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_CUSTOMER_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m12:37:37.953745 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 1 seconds
+[0m12:37:37.954745 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_customer"
+[0m12:37:37.955742 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_customer"} */
+COMMIT
+[0m12:37:38.132773 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:38.175870 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_customer (execute): 2023-04-04 12:37:31.586730 => 2023-04-04 12:37:38.175870
+[0m12:37:38.176877 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_customer: Close
+[0m12:37:38.399638 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B6DC1C8>]}
+[0m12:37:38.401146 [info ] [Thread-1  ]: 1 of 4 OK snapshotted AIRBYTE_SCHEMA.snp_customer .............................. [[32msuccess[0m in 6.82s]
+[0m12:37:38.406155 [debug] [Thread-1  ]: Finished running node snapshot.Adventure_Works.snp_customer
+[0m12:37:38.407154 [debug] [Thread-1  ]: Began running node snapshot.Adventure_Works.snp_product
+[0m12:37:38.408156 [info ] [Thread-1  ]: 2 of 4 START snapshot AIRBYTE_SCHEMA.snp_product ............................... [RUN]
+[0m12:37:38.410668 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.Adventure_Works.snp_product'
+[0m12:37:38.411680 [debug] [Thread-1  ]: Began compiling node snapshot.Adventure_Works.snp_product
+[0m12:37:38.422194 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_product (compile): 2023-04-04 12:37:38.412683 => 2023-04-04 12:37:38.422194
+[0m12:37:38.423196 [debug] [Thread-1  ]: Began executing node snapshot.Adventure_Works.snp_product
+[0m12:37:38.445283 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:38.445283 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+select * from (
+            
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.product
+
+        ) as __dbt_sbq
+        where false
+        limit 0
+[0m12:37:38.446282 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:37:40.244560 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 2 seconds
+[0m12:37:40.248558 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:40.249560 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT"
+[0m12:37:40.385215 [debug] [Thread-1  ]: SQL status: SUCCESS 33 in 0 seconds
+[0m12:37:40.393734 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:40.393734 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT"
+[0m12:37:40.508186 [debug] [Thread-1  ]: SQL status: SUCCESS 33 in 0 seconds
+[0m12:37:40.539742 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:40.540741 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+create or replace temporary table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT__dbt_tmp"  as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.product
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            productid as dbt_unique_key
+
+        from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            productid as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))) as dbt_valid_to,
+            md5(coalesce(cast(productid as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            productid as dbt_unique_key,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."SIZE" != source_data."SIZE"
+        or
+        (
+            ((snapshotted_data."SIZE" is null) and not (source_data."SIZE" is null))
+            or
+            ((not snapshotted_data."SIZE" is null) and (source_data."SIZE" is null))
+        ) or snapshotted_data."CLASS" != source_data."CLASS"
+        or
+        (
+            ((snapshotted_data."CLASS" is null) and not (source_data."CLASS" is null))
+            or
+            ((not snapshotted_data."CLASS" is null) and (source_data."CLASS" is null))
+        ) or snapshotted_data."COLOR" != source_data."COLOR"
+        or
+        (
+            ((snapshotted_data."COLOR" is null) and not (source_data."COLOR" is null))
+            or
+            ((not snapshotted_data."COLOR" is null) and (source_data."COLOR" is null))
+        ) or snapshotted_data."STYLE" != source_data."STYLE"
+        or
+        (
+            ((snapshotted_data."STYLE" is null) and not (source_data."STYLE" is null))
+            or
+            ((not snapshotted_data."STYLE" is null) and (source_data."STYLE" is null))
+        ) or snapshotted_data."WEIGHT" != source_data."WEIGHT"
+        or
+        (
+            ((snapshotted_data."WEIGHT" is null) and not (source_data."WEIGHT" is null))
+            or
+            ((not snapshotted_data."WEIGHT" is null) and (source_data."WEIGHT" is null))
+        ) or snapshotted_data."ROWGUID" != source_data."ROWGUID"
+        or
+        (
+            ((snapshotted_data."ROWGUID" is null) and not (source_data."ROWGUID" is null))
+            or
+            ((not snapshotted_data."ROWGUID" is null) and (source_data."ROWGUID" is null))
+        ) or snapshotted_data."MAKEFLAG" != source_data."MAKEFLAG"
+        or
+        (
+            ((snapshotted_data."MAKEFLAG" is null) and not (source_data."MAKEFLAG" is null))
+            or
+            ((not snapshotted_data."MAKEFLAG" is null) and (source_data."MAKEFLAG" is null))
+        ) or snapshotted_data."LISTPRICE" != source_data."LISTPRICE"
+        or
+        (
+            ((snapshotted_data."LISTPRICE" is null) and not (source_data."LISTPRICE" is null))
+            or
+            ((not snapshotted_data."LISTPRICE" is null) and (source_data."LISTPRICE" is null))
+        ) or snapshotted_data."PRODUCTID" != source_data."PRODUCTID"
+        or
+        (
+            ((snapshotted_data."PRODUCTID" is null) and not (source_data."PRODUCTID" is null))
+            or
+            ((not snapshotted_data."PRODUCTID" is null) and (source_data."PRODUCTID" is null))
+        ) or snapshotted_data."PRODUCTLINE" != source_data."PRODUCTLINE"
+        or
+        (
+            ((snapshotted_data."PRODUCTLINE" is null) and not (source_data."PRODUCTLINE" is null))
+            or
+            ((not snapshotted_data."PRODUCTLINE" is null) and (source_data."PRODUCTLINE" is null))
+        ) or snapshotted_data."SELLENDDATE" != source_data."SELLENDDATE"
+        or
+        (
+            ((snapshotted_data."SELLENDDATE" is null) and not (source_data."SELLENDDATE" is null))
+            or
+            ((not snapshotted_data."SELLENDDATE" is null) and (source_data."SELLENDDATE" is null))
+        ) or snapshotted_data."MODIFIEDDATE" != source_data."MODIFIEDDATE"
+        or
+        (
+            ((snapshotted_data."MODIFIEDDATE" is null) and not (source_data."MODIFIEDDATE" is null))
+            or
+            ((not snapshotted_data."MODIFIEDDATE" is null) and (source_data."MODIFIEDDATE" is null))
+        ) or snapshotted_data."REORDERPOINT" != source_data."REORDERPOINT"
+        or
+        (
+            ((snapshotted_data."REORDERPOINT" is null) and not (source_data."REORDERPOINT" is null))
+            or
+            ((not snapshotted_data."REORDERPOINT" is null) and (source_data."REORDERPOINT" is null))
+        ) or snapshotted_data."STANDARDCOST" != source_data."STANDARDCOST"
+        or
+        (
+            ((snapshotted_data."STANDARDCOST" is null) and not (source_data."STANDARDCOST" is null))
+            or
+            ((not snapshotted_data."STANDARDCOST" is null) and (source_data."STANDARDCOST" is null))
+        ) or snapshotted_data."PRODUCTNUMBER" != source_data."PRODUCTNUMBER"
+        or
+        (
+            ((snapshotted_data."PRODUCTNUMBER" is null) and not (source_data."PRODUCTNUMBER" is null))
+            or
+            ((not snapshotted_data."PRODUCTNUMBER" is null) and (source_data."PRODUCTNUMBER" is null))
+        ) or snapshotted_data."SELLSTARTDATE" != source_data."SELLSTARTDATE"
+        or
+        (
+            ((snapshotted_data."SELLSTARTDATE" is null) and not (source_data."SELLSTARTDATE" is null))
+            or
+            ((not snapshotted_data."SELLSTARTDATE" is null) and (source_data."SELLSTARTDATE" is null))
+        ) or snapshotted_data."PRODUCTMODELID" != source_data."PRODUCTMODELID"
+        or
+        (
+            ((snapshotted_data."PRODUCTMODELID" is null) and not (source_data."PRODUCTMODELID" is null))
+            or
+            ((not snapshotted_data."PRODUCTMODELID" is null) and (source_data."PRODUCTMODELID" is null))
+        ) or snapshotted_data."DISCONTINUEDDATE" != source_data."DISCONTINUEDDATE"
+        or
+        (
+            ((snapshotted_data."DISCONTINUEDDATE" is null) and not (source_data."DISCONTINUEDDATE" is null))
+            or
+            ((not snapshotted_data."DISCONTINUEDDATE" is null) and (source_data."DISCONTINUEDDATE" is null))
+        ) or snapshotted_data."SAFETYSTOCKLEVEL" != source_data."SAFETYSTOCKLEVEL"
+        or
+        (
+            ((snapshotted_data."SAFETYSTOCKLEVEL" is null) and not (source_data."SAFETYSTOCKLEVEL" is null))
+            or
+            ((not snapshotted_data."SAFETYSTOCKLEVEL" is null) and (source_data."SAFETYSTOCKLEVEL" is null))
+        ) or snapshotted_data."DAYSTOMANUFACTURE" != source_data."DAYSTOMANUFACTURE"
+        or
+        (
+            ((snapshotted_data."DAYSTOMANUFACTURE" is null) and not (source_data."DAYSTOMANUFACTURE" is null))
+            or
+            ((not snapshotted_data."DAYSTOMANUFACTURE" is null) and (source_data."DAYSTOMANUFACTURE" is null))
+        ) or snapshotted_data."FINISHEDGOODSFLAG" != source_data."FINISHEDGOODSFLAG"
+        or
+        (
+            ((snapshotted_data."FINISHEDGOODSFLAG" is null) and not (source_data."FINISHEDGOODSFLAG" is null))
+            or
+            ((not snapshotted_data."FINISHEDGOODSFLAG" is null) and (source_data."FINISHEDGOODSFLAG" is null))
+        ) or snapshotted_data."SIZEUNITMEASURECODE" != source_data."SIZEUNITMEASURECODE"
+        or
+        (
+            ((snapshotted_data."SIZEUNITMEASURECODE" is null) and not (source_data."SIZEUNITMEASURECODE" is null))
+            or
+            ((not snapshotted_data."SIZEUNITMEASURECODE" is null) and (source_data."SIZEUNITMEASURECODE" is null))
+        ) or snapshotted_data."PRODUCTSUBCATEGORYID" != source_data."PRODUCTSUBCATEGORYID"
+        or
+        (
+            ((snapshotted_data."PRODUCTSUBCATEGORYID" is null) and not (source_data."PRODUCTSUBCATEGORYID" is null))
+            or
+            ((not snapshotted_data."PRODUCTSUBCATEGORYID" is null) and (source_data."PRODUCTSUBCATEGORYID" is null))
+        ) or snapshotted_data."WEIGHTUNITMEASURECODE" != source_data."WEIGHTUNITMEASURECODE"
+        or
+        (
+            ((snapshotted_data."WEIGHTUNITMEASURECODE" is null) and not (source_data."WEIGHTUNITMEASURECODE" is null))
+            or
+            ((not snapshotted_data."WEIGHTUNITMEASURECODE" is null) and (source_data."WEIGHTUNITMEASURECODE" is null))
+        ) or snapshotted_data."_AIRBYTE_AB_ID" != source_data."_AIRBYTE_AB_ID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_AB_ID" is null) and not (source_data."_AIRBYTE_AB_ID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_AB_ID" is null) and (source_data."_AIRBYTE_AB_ID" is null))
+        ) or snapshotted_data."_AIRBYTE_EMITTED_AT" != source_data."_AIRBYTE_EMITTED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and not (source_data."_AIRBYTE_EMITTED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and (source_data."_AIRBYTE_EMITTED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_NORMALIZED_AT" != source_data."_AIRBYTE_NORMALIZED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and not (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_PRODUCT_HASHID" != source_data."_AIRBYTE_PRODUCT_HASHID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_PRODUCT_HASHID" is null) and not (source_data."_AIRBYTE_PRODUCT_HASHID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_PRODUCT_HASHID" is null) and (source_data."_AIRBYTE_PRODUCT_HASHID" is null))
+        ))
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data."NAME" != source_data."NAME"
+        or
+        (
+            ((snapshotted_data."NAME" is null) and not (source_data."NAME" is null))
+            or
+            ((not snapshotted_data."NAME" is null) and (source_data."NAME" is null))
+        ) or snapshotted_data."SIZE" != source_data."SIZE"
+        or
+        (
+            ((snapshotted_data."SIZE" is null) and not (source_data."SIZE" is null))
+            or
+            ((not snapshotted_data."SIZE" is null) and (source_data."SIZE" is null))
+        ) or snapshotted_data."CLASS" != source_data."CLASS"
+        or
+        (
+            ((snapshotted_data."CLASS" is null) and not (source_data."CLASS" is null))
+            or
+            ((not snapshotted_data."CLASS" is null) and (source_data."CLASS" is null))
+        ) or snapshotted_data."COLOR" != source_data."COLOR"
+        or
+        (
+            ((snapshotted_data."COLOR" is null) and not (source_data."COLOR" is null))
+            or
+            ((not snapshotted_data."COLOR" is null) and (source_data."COLOR" is null))
+        ) or snapshotted_data."STYLE" != source_data."STYLE"
+        or
+        (
+            ((snapshotted_data."STYLE" is null) and not (source_data."STYLE" is null))
+            or
+            ((not snapshotted_data."STYLE" is null) and (source_data."STYLE" is null))
+        ) or snapshotted_data."WEIGHT" != source_data."WEIGHT"
+        or
+        (
+            ((snapshotted_data."WEIGHT" is null) and not (source_data."WEIGHT" is null))
+            or
+            ((not snapshotted_data."WEIGHT" is null) and (source_data."WEIGHT" is null))
+        ) or snapshotted_data."ROWGUID" != source_data."ROWGUID"
+        or
+        (
+            ((snapshotted_data."ROWGUID" is null) and not (source_data."ROWGUID" is null))
+            or
+            ((not snapshotted_data."ROWGUID" is null) and (source_data."ROWGUID" is null))
+        ) or snapshotted_data."MAKEFLAG" != source_data."MAKEFLAG"
+        or
+        (
+            ((snapshotted_data."MAKEFLAG" is null) and not (source_data."MAKEFLAG" is null))
+            or
+            ((not snapshotted_data."MAKEFLAG" is null) and (source_data."MAKEFLAG" is null))
+        ) or snapshotted_data."LISTPRICE" != source_data."LISTPRICE"
+        or
+        (
+            ((snapshotted_data."LISTPRICE" is null) and not (source_data."LISTPRICE" is null))
+            or
+            ((not snapshotted_data."LISTPRICE" is null) and (source_data."LISTPRICE" is null))
+        ) or snapshotted_data."PRODUCTID" != source_data."PRODUCTID"
+        or
+        (
+            ((snapshotted_data."PRODUCTID" is null) and not (source_data."PRODUCTID" is null))
+            or
+            ((not snapshotted_data."PRODUCTID" is null) and (source_data."PRODUCTID" is null))
+        ) or snapshotted_data."PRODUCTLINE" != source_data."PRODUCTLINE"
+        or
+        (
+            ((snapshotted_data."PRODUCTLINE" is null) and not (source_data."PRODUCTLINE" is null))
+            or
+            ((not snapshotted_data."PRODUCTLINE" is null) and (source_data."PRODUCTLINE" is null))
+        ) or snapshotted_data."SELLENDDATE" != source_data."SELLENDDATE"
+        or
+        (
+            ((snapshotted_data."SELLENDDATE" is null) and not (source_data."SELLENDDATE" is null))
+            or
+            ((not snapshotted_data."SELLENDDATE" is null) and (source_data."SELLENDDATE" is null))
+        ) or snapshotted_data."MODIFIEDDATE" != source_data."MODIFIEDDATE"
+        or
+        (
+            ((snapshotted_data."MODIFIEDDATE" is null) and not (source_data."MODIFIEDDATE" is null))
+            or
+            ((not snapshotted_data."MODIFIEDDATE" is null) and (source_data."MODIFIEDDATE" is null))
+        ) or snapshotted_data."REORDERPOINT" != source_data."REORDERPOINT"
+        or
+        (
+            ((snapshotted_data."REORDERPOINT" is null) and not (source_data."REORDERPOINT" is null))
+            or
+            ((not snapshotted_data."REORDERPOINT" is null) and (source_data."REORDERPOINT" is null))
+        ) or snapshotted_data."STANDARDCOST" != source_data."STANDARDCOST"
+        or
+        (
+            ((snapshotted_data."STANDARDCOST" is null) and not (source_data."STANDARDCOST" is null))
+            or
+            ((not snapshotted_data."STANDARDCOST" is null) and (source_data."STANDARDCOST" is null))
+        ) or snapshotted_data."PRODUCTNUMBER" != source_data."PRODUCTNUMBER"
+        or
+        (
+            ((snapshotted_data."PRODUCTNUMBER" is null) and not (source_data."PRODUCTNUMBER" is null))
+            or
+            ((not snapshotted_data."PRODUCTNUMBER" is null) and (source_data."PRODUCTNUMBER" is null))
+        ) or snapshotted_data."SELLSTARTDATE" != source_data."SELLSTARTDATE"
+        or
+        (
+            ((snapshotted_data."SELLSTARTDATE" is null) and not (source_data."SELLSTARTDATE" is null))
+            or
+            ((not snapshotted_data."SELLSTARTDATE" is null) and (source_data."SELLSTARTDATE" is null))
+        ) or snapshotted_data."PRODUCTMODELID" != source_data."PRODUCTMODELID"
+        or
+        (
+            ((snapshotted_data."PRODUCTMODELID" is null) and not (source_data."PRODUCTMODELID" is null))
+            or
+            ((not snapshotted_data."PRODUCTMODELID" is null) and (source_data."PRODUCTMODELID" is null))
+        ) or snapshotted_data."DISCONTINUEDDATE" != source_data."DISCONTINUEDDATE"
+        or
+        (
+            ((snapshotted_data."DISCONTINUEDDATE" is null) and not (source_data."DISCONTINUEDDATE" is null))
+            or
+            ((not snapshotted_data."DISCONTINUEDDATE" is null) and (source_data."DISCONTINUEDDATE" is null))
+        ) or snapshotted_data."SAFETYSTOCKLEVEL" != source_data."SAFETYSTOCKLEVEL"
+        or
+        (
+            ((snapshotted_data."SAFETYSTOCKLEVEL" is null) and not (source_data."SAFETYSTOCKLEVEL" is null))
+            or
+            ((not snapshotted_data."SAFETYSTOCKLEVEL" is null) and (source_data."SAFETYSTOCKLEVEL" is null))
+        ) or snapshotted_data."DAYSTOMANUFACTURE" != source_data."DAYSTOMANUFACTURE"
+        or
+        (
+            ((snapshotted_data."DAYSTOMANUFACTURE" is null) and not (source_data."DAYSTOMANUFACTURE" is null))
+            or
+            ((not snapshotted_data."DAYSTOMANUFACTURE" is null) and (source_data."DAYSTOMANUFACTURE" is null))
+        ) or snapshotted_data."FINISHEDGOODSFLAG" != source_data."FINISHEDGOODSFLAG"
+        or
+        (
+            ((snapshotted_data."FINISHEDGOODSFLAG" is null) and not (source_data."FINISHEDGOODSFLAG" is null))
+            or
+            ((not snapshotted_data."FINISHEDGOODSFLAG" is null) and (source_data."FINISHEDGOODSFLAG" is null))
+        ) or snapshotted_data."SIZEUNITMEASURECODE" != source_data."SIZEUNITMEASURECODE"
+        or
+        (
+            ((snapshotted_data."SIZEUNITMEASURECODE" is null) and not (source_data."SIZEUNITMEASURECODE" is null))
+            or
+            ((not snapshotted_data."SIZEUNITMEASURECODE" is null) and (source_data."SIZEUNITMEASURECODE" is null))
+        ) or snapshotted_data."PRODUCTSUBCATEGORYID" != source_data."PRODUCTSUBCATEGORYID"
+        or
+        (
+            ((snapshotted_data."PRODUCTSUBCATEGORYID" is null) and not (source_data."PRODUCTSUBCATEGORYID" is null))
+            or
+            ((not snapshotted_data."PRODUCTSUBCATEGORYID" is null) and (source_data."PRODUCTSUBCATEGORYID" is null))
+        ) or snapshotted_data."WEIGHTUNITMEASURECODE" != source_data."WEIGHTUNITMEASURECODE"
+        or
+        (
+            ((snapshotted_data."WEIGHTUNITMEASURECODE" is null) and not (source_data."WEIGHTUNITMEASURECODE" is null))
+            or
+            ((not snapshotted_data."WEIGHTUNITMEASURECODE" is null) and (source_data."WEIGHTUNITMEASURECODE" is null))
+        ) or snapshotted_data."_AIRBYTE_AB_ID" != source_data."_AIRBYTE_AB_ID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_AB_ID" is null) and not (source_data."_AIRBYTE_AB_ID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_AB_ID" is null) and (source_data."_AIRBYTE_AB_ID" is null))
+        ) or snapshotted_data."_AIRBYTE_EMITTED_AT" != source_data."_AIRBYTE_EMITTED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and not (source_data."_AIRBYTE_EMITTED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_EMITTED_AT" is null) and (source_data."_AIRBYTE_EMITTED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_NORMALIZED_AT" != source_data."_AIRBYTE_NORMALIZED_AT"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and not (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_NORMALIZED_AT" is null) and (source_data."_AIRBYTE_NORMALIZED_AT" is null))
+        ) or snapshotted_data."_AIRBYTE_PRODUCT_HASHID" != source_data."_AIRBYTE_PRODUCT_HASHID"
+        or
+        (
+            ((snapshotted_data."_AIRBYTE_PRODUCT_HASHID" is null) and not (source_data."_AIRBYTE_PRODUCT_HASHID" is null))
+            or
+            ((not snapshotted_data."_AIRBYTE_PRODUCT_HASHID" is null) and (source_data."_AIRBYTE_PRODUCT_HASHID" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m12:37:41.971575 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:37:41.975573 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:41.975573 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT__dbt_tmp"
+[0m12:37:42.108700 [debug] [Thread-1  ]: SQL status: SUCCESS 35 in 0 seconds
+[0m12:37:42.119226 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.119226 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT"
+[0m12:37:42.262453 [debug] [Thread-1  ]: SQL status: SUCCESS 33 in 0 seconds
+[0m12:37:42.274564 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.275564 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT__dbt_tmp"
+[0m12:37:42.401858 [debug] [Thread-1  ]: SQL status: SUCCESS 35 in 0 seconds
+[0m12:37:42.408853 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.408853 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT"
+[0m12:37:42.540652 [debug] [Thread-1  ]: SQL status: SUCCESS 33 in 0 seconds
+[0m12:37:42.547685 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.547685 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT__dbt_tmp"
+[0m12:37:42.679612 [debug] [Thread-1  ]: SQL status: SUCCESS 35 in 0 seconds
+[0m12:37:42.685127 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.688122 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.688122 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+BEGIN
+[0m12:37:42.825400 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:42.826400 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:42.826400 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+merge into "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT" as DBT_INTERNAL_DEST
+    using "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_PRODUCT__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("NAME", "SIZE", "CLASS", "COLOR", "STYLE", "WEIGHT", "ROWGUID", "MAKEFLAG", "LISTPRICE", "PRODUCTID", "PRODUCTLINE", "SELLENDDATE", "MODIFIEDDATE", "REORDERPOINT", "STANDARDCOST", "PRODUCTNUMBER", "SELLSTARTDATE", "PRODUCTMODELID", "DISCONTINUEDDATE", "SAFETYSTOCKLEVEL", "DAYSTOMANUFACTURE", "FINISHEDGOODSFLAG", "SIZEUNITMEASURECODE", "PRODUCTSUBCATEGORYID", "WEIGHTUNITMEASURECODE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_PRODUCT_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("NAME", "SIZE", "CLASS", "COLOR", "STYLE", "WEIGHT", "ROWGUID", "MAKEFLAG", "LISTPRICE", "PRODUCTID", "PRODUCTLINE", "SELLENDDATE", "MODIFIEDDATE", "REORDERPOINT", "STANDARDCOST", "PRODUCTNUMBER", "SELLSTARTDATE", "PRODUCTMODELID", "DISCONTINUEDDATE", "SAFETYSTOCKLEVEL", "DAYSTOMANUFACTURE", "FINISHEDGOODSFLAG", "SIZEUNITMEASURECODE", "PRODUCTSUBCATEGORYID", "WEIGHTUNITMEASURECODE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_PRODUCT_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m12:37:43.110452 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 0 seconds
+[0m12:37:43.111394 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_product"
+[0m12:37:43.111394 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_product"} */
+COMMIT
+[0m12:37:43.300755 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:43.303766 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_product (execute): 2023-04-04 12:37:38.424208 => 2023-04-04 12:37:43.303766
+[0m12:37:43.304764 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_product: Close
+[0m12:37:43.522644 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B885CC8>]}
+[0m12:37:43.522644 [info ] [Thread-1  ]: 2 of 4 OK snapshotted AIRBYTE_SCHEMA.snp_product ............................... [[32msuccess[0m in 5.11s]
+[0m12:37:43.524651 [debug] [Thread-1  ]: Finished running node snapshot.Adventure_Works.snp_product
+[0m12:37:43.525652 [debug] [Thread-1  ]: Began running node snapshot.Adventure_Works.snp_salesorderdetail
+[0m12:37:43.525652 [info ] [Thread-1  ]: 3 of 4 START snapshot AIRBYTE_SCHEMA.snp_salesorderdetail ...................... [RUN]
+[0m12:37:43.527654 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.Adventure_Works.snp_salesorderdetail'
+[0m12:37:43.527654 [debug] [Thread-1  ]: Began compiling node snapshot.Adventure_Works.snp_salesorderdetail
+[0m12:37:43.534204 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_salesorderdetail (compile): 2023-04-04 12:37:43.527654 => 2023-04-04 12:37:43.534204
+[0m12:37:43.535203 [debug] [Thread-1  ]: Began executing node snapshot.Adventure_Works.snp_salesorderdetail
+[0m12:37:43.566423 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:43.567432 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL"
+[0m12:37:43.567432 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:37:45.330542 [debug] [Thread-1  ]: SQL status: SUCCESS 18 in 2 seconds
+[0m12:37:45.342106 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:45.343133 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+create or replace temporary table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL__dbt_tmp"  as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderdetail
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            salesorderdetailid as dbt_unique_key
+
+        from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            salesorderdetailid as dbt_unique_key,
+            modifieddate as dbt_updated_at,
+            modifieddate as dbt_valid_from,
+            nullif(modifieddate, modifieddate) as dbt_valid_to,
+            md5(coalesce(cast(salesorderdetailid as varchar ), '')
+         || '|' || coalesce(cast(modifieddate as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            salesorderdetailid as dbt_unique_key,
+            modifieddate as dbt_updated_at,
+            modifieddate as dbt_valid_from,
+            modifieddate as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.modifieddate)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.modifieddate)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m12:37:47.002143 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m12:37:47.011675 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.012675 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL__dbt_tmp"
+[0m12:37:47.139175 [debug] [Thread-1  ]: SQL status: SUCCESS 20 in 0 seconds
+[0m12:37:47.153226 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.153226 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL"
+[0m12:37:47.282523 [debug] [Thread-1  ]: SQL status: SUCCESS 18 in 0 seconds
+[0m12:37:47.288528 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.288528 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL__dbt_tmp"
+[0m12:37:47.395163 [debug] [Thread-1  ]: SQL status: SUCCESS 20 in 0 seconds
+[0m12:37:47.411752 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.411752 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL"
+[0m12:37:47.538908 [debug] [Thread-1  ]: SQL status: SUCCESS 18 in 0 seconds
+[0m12:37:47.546429 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.546429 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL__dbt_tmp"
+[0m12:37:47.666363 [debug] [Thread-1  ]: SQL status: SUCCESS 20 in 0 seconds
+[0m12:37:47.675898 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.681418 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.682420 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+BEGIN
+[0m12:37:47.810765 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:47.810765 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:47.811983 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+merge into "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL" as DBT_INTERNAL_DEST
+    using "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERDETAIL__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("ROWGUID", "ORDERQTY", "PRODUCTID", "UNITPRICE", "MODIFIEDDATE", "SALESORDERID", "SPECIALOFFERID", "UNITPRICEDISCOUNT", "SALESORDERDETAILID", "CARRIERTRACKINGNUMBER", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_SALESORDERDETAIL_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("ROWGUID", "ORDERQTY", "PRODUCTID", "UNITPRICE", "MODIFIEDDATE", "SALESORDERID", "SPECIALOFFERID", "UNITPRICEDISCOUNT", "SALESORDERDETAILID", "CARRIERTRACKINGNUMBER", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_SALESORDERDETAIL_HASHID", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m12:37:48.339385 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 1 seconds
+[0m12:37:48.340389 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderdetail"
+[0m12:37:48.340389 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderdetail"} */
+COMMIT
+[0m12:37:48.521620 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:48.524693 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_salesorderdetail (execute): 2023-04-04 12:37:43.535203 => 2023-04-04 12:37:48.524693
+[0m12:37:48.524693 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderdetail: Close
+[0m12:37:48.745477 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B87CF88>]}
+[0m12:37:48.746475 [info ] [Thread-1  ]: 3 of 4 OK snapshotted AIRBYTE_SCHEMA.snp_salesorderdetail ...................... [[32msuccess[0m in 5.22s]
+[0m12:37:48.748488 [debug] [Thread-1  ]: Finished running node snapshot.Adventure_Works.snp_salesorderdetail
+[0m12:37:48.750477 [debug] [Thread-1  ]: Began running node snapshot.Adventure_Works.snp_salesorderheader
+[0m12:37:48.750984 [info ] [Thread-1  ]: 4 of 4 START snapshot AIRBYTE_SCHEMA.snp_salesorderheader ...................... [RUN]
+[0m12:37:48.753991 [debug] [Thread-1  ]: Acquiring new snowflake connection 'snapshot.Adventure_Works.snp_salesorderheader'
+[0m12:37:48.753991 [debug] [Thread-1  ]: Began compiling node snapshot.Adventure_Works.snp_salesorderheader
+[0m12:37:48.761514 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_salesorderheader (compile): 2023-04-04 12:37:48.754991 => 2023-04-04 12:37:48.761514
+[0m12:37:48.762514 [debug] [Thread-1  ]: Began executing node snapshot.Adventure_Works.snp_salesorderheader
+[0m12:37:48.776686 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:48.777687 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER"
+[0m12:37:48.777687 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:37:50.628324 [debug] [Thread-1  ]: SQL status: SUCCESS 34 in 2 seconds
+[0m12:37:50.658928 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:50.660496 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+create or replace temporary table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER__dbt_tmp"  as
+        (with snapshot_query as (
+
+        
+
+
+
+select * from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.salesorderheader
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            salesorderid as dbt_unique_key
+
+        from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER"
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            salesorderid as dbt_unique_key,
+            modifieddate as dbt_updated_at,
+            modifieddate as dbt_valid_from,
+            nullif(modifieddate, modifieddate) as dbt_valid_to,
+            md5(coalesce(cast(salesorderid as varchar ), '')
+         || '|' || coalesce(cast(modifieddate as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            salesorderid as dbt_unique_key,
+            modifieddate as dbt_updated_at,
+            modifieddate as dbt_valid_from,
+            modifieddate as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.modifieddate)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.modifieddate)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+        );
+[0m12:37:52.053607 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m12:37:52.058607 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.058607 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER__dbt_tmp"
+[0m12:37:52.186938 [debug] [Thread-1  ]: SQL status: SUCCESS 36 in 0 seconds
+[0m12:37:52.200963 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.200963 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER"
+[0m12:37:52.318679 [debug] [Thread-1  ]: SQL status: SUCCESS 34 in 0 seconds
+[0m12:37:52.333706 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.334708 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER__dbt_tmp"
+[0m12:37:52.471338 [debug] [Thread-1  ]: SQL status: SUCCESS 36 in 0 seconds
+[0m12:37:52.480851 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.481862 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER"
+[0m12:37:52.612868 [debug] [Thread-1  ]: SQL status: SUCCESS 34 in 0 seconds
+[0m12:37:52.623404 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.624405 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+describe table "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER__dbt_tmp"
+[0m12:37:52.767434 [debug] [Thread-1  ]: SQL status: SUCCESS 36 in 0 seconds
+[0m12:37:52.775840 [debug] [Thread-1  ]: Writing runtime sql for node "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.778841 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.778841 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+BEGIN
+[0m12:37:52.954169 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:52.955169 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:52.955169 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+merge into "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER" as DBT_INTERNAL_DEST
+    using "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."SNP_SALESORDERHEADER__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("STATUS", "TAXAMT", "COMMENT", "DUEDATE", "FREIGHT", "ROWGUID", "SHIPDATE", "SUBTOTAL", "TOTALDUE", "ORDERDATE", "CUSTOMERID", "TERRITORYID", "CREDITCARDID", "MODIFIEDDATE", "SALESORDERID", "SHIPMETHODID", "ACCOUNTNUMBER", "SALESPERSONID", "CURRENCYRATEID", "REVISIONNUMBER", "BILLTOADDRESSID", "ONLINEORDERFLAG", "SHIPTOADDRESSID", "PURCHASEORDERNUMBER", "CREDITCARDAPPROVALCODE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_SALESORDERHEADER_HASHID", "_AIRBYTE_UNIQUE_KEY", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("STATUS", "TAXAMT", "COMMENT", "DUEDATE", "FREIGHT", "ROWGUID", "SHIPDATE", "SUBTOTAL", "TOTALDUE", "ORDERDATE", "CUSTOMERID", "TERRITORYID", "CREDITCARDID", "MODIFIEDDATE", "SALESORDERID", "SHIPMETHODID", "ACCOUNTNUMBER", "SALESPERSONID", "CURRENCYRATEID", "REVISIONNUMBER", "BILLTOADDRESSID", "ONLINEORDERFLAG", "SHIPTOADDRESSID", "PURCHASEORDERNUMBER", "CREDITCARDAPPROVALCODE", "_AIRBYTE_AB_ID", "_AIRBYTE_EMITTED_AT", "_AIRBYTE_NORMALIZED_AT", "_AIRBYTE_SALESORDERHEADER_HASHID", "_AIRBYTE_UNIQUE_KEY", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+;
+[0m12:37:54.479280 [debug] [Thread-1  ]: SQL status: SUCCESS 0 in 2 seconds
+[0m12:37:54.479280 [debug] [Thread-1  ]: Using snowflake connection "snapshot.Adventure_Works.snp_salesorderheader"
+[0m12:37:54.480792 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: /* {"app": "dbt", "dbt_version": "1.4.4", "profile_name": "Adventure_Works", "target_name": "dev", "node_id": "snapshot.Adventure_Works.snp_salesorderheader"} */
+COMMIT
+[0m12:37:54.672840 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m12:37:54.678762 [debug] [Thread-1  ]: Timing info for snapshot.Adventure_Works.snp_salesorderheader (execute): 2023-04-04 12:37:48.762514 => 2023-04-04 12:37:54.678762
+[0m12:37:54.679316 [debug] [Thread-1  ]: On snapshot.Adventure_Works.snp_salesorderheader: Close
+[0m12:37:54.946054 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4135160a-1a31-4937-9b9e-0778421bdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B91DC48>]}
+[0m12:37:54.948059 [info ] [Thread-1  ]: 4 of 4 OK snapshotted AIRBYTE_SCHEMA.snp_salesorderheader ...................... [[32msuccess[0m in 6.19s]
+[0m12:37:54.949054 [debug] [Thread-1  ]: Finished running node snapshot.Adventure_Works.snp_salesorderheader
+[0m12:37:55.013365 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:37:55.015361 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:37:55.016359 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+[0m12:37:55.016359 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+[0m12:37:55.017360 [debug] [MainThread]: Connection 'snapshot.Adventure_Works.snp_salesorderheader' was properly closed.
+[0m12:37:55.017360 [info ] [MainThread]: 
+[0m12:37:55.019358 [info ] [MainThread]: Finished running 4 snapshots in 0 hours 0 minutes and 27.53 seconds (27.53s).
+[0m12:37:55.020870 [debug] [MainThread]: Command end result
+[0m12:37:55.050645 [info ] [MainThread]: 
+[0m12:37:55.052794 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:37:55.054795 [info ] [MainThread]: 
+[0m12:37:55.056795 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m12:37:55.057795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B96BD88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032B96B148>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002032BA44448>]}
+[0m12:37:55.058798 [debug] [MainThread]: Flushing usage events

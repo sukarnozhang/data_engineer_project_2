@@ -1,0 +1,26 @@
+
+
+============================== 2023-04-04 11:43:38.798717 | 2fde7d87-1344-4242-9ac0-88db30ff4c0a ==============================
+[0m11:43:38.798717 [info ] [MainThread]: Running with dbt=1.4.4
+[0m11:43:38.800717 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ranis\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m11:43:38.800717 [debug] [MainThread]: Tracking: tracking
+[0m11:43:38.801718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25D5088>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25DA5C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25DA648>]}
+[0m11:43:54.472509 [debug] [MainThread]: Starter project path: c:\users\ranis\appdata\local\programs\python\python37\lib\site-packages\dbt\include\starter_project
+[0m11:43:57.637419 [info ] [MainThread]: 
+Your new dbt project "Adventure_Works" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:43:57.642025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25DF9C8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25DFD88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271E25D8B88>]}
+[0m11:43:57.642938 [debug] [MainThread]: Flushing usage events

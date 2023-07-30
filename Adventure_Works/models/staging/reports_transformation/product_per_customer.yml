@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: product_per_customer
+    columns:
+      - name: sum_of_product
+        tests:
+          - not_null
+          

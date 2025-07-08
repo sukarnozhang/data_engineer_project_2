@@ -1,3 +1,5 @@
+# dbt can reference them using source() in the models
+# Validate that source tables exist at runtime
 version: 2
 
 sources:

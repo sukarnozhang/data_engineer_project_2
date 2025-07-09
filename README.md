@@ -96,11 +96,11 @@ The datasets are extracted and loaded into Snowflake. The Adventure Works datase
 
   
 Data Build Tool(DBT):
-The datasets loaded into Snowflake are connected to the dbt working environment by updating the profiles.yml configuration file.
+The datasets loaded into Snowflake are connected to the dbt working environment by configuring the profiles.yml file
 
 ## Steps:
-For connection with editor.
-Update the profiles.yml file in the dbt with credentials.
+Update profiles.yml for connection with Snowflake:
+```yml
 airbyte_snowflake:
   outputs:
     dev:
@@ -114,12 +114,7 @@ airbyte_snowflake:
       database: AIRBYTE_DATABASE
       schema: AIRBYTE_SCHEMA
   target: dev
-
-  -- RUN the "dbt deps" command to initiate connection with Snowflake.
-
-  For transformtion process, the aim of the project to get better insights into sales, customer, product and employee table.
-  The different transformations applied on the tables and join together to get better quality data.
-
+```
 
 ## Incremental Model
 For sales details:

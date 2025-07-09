@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_salesorderdetail
+    description: "Staging model for sales order detail with product-level information"
+    columns:
+      - name: salesorderdetailid
+        description: "Primary key for sales order line"
+        tests:
+          - unique
+          - not_null
+
+      - name: orderqty
+        description: "Quantity ordered"
+        tests:
+          - not_null
+          - number_greater_than:
+              min_num: 0
+
+      - name: unitprice
+        description: "Price per unit"
+        tests:
+          - not_null
+          - number_greater_than:
+              min_num: 0

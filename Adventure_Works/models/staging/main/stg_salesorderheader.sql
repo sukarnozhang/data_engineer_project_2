@@ -1,3 +1,4 @@
+-- Order level info
 with source_data as (
     select
         salesorderid

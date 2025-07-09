@@ -1,3 +1,4 @@
+-- Product level infro
 with source_data as (
     select
         salesorderid

@@ -94,7 +94,8 @@ commit;
 2. Data Transformation
 The datasets are extracted and loaded into Snowflake. The Adventure Works datasets are stored in Snowflake under the AIRBYTE_DATABASE database and the AIRBYTE_SCHEMA schema, with all relevant tables ingested through Airbyte.
 
-##Data Build Tool(DBT):
+  
+Data Build Tool(DBT):
 The datasets loaded into Snowflake are connected to the dbt working environment by updating the profiles.yml configuration file.
 
 ## Steps:
@@ -120,30 +121,35 @@ airbyte_snowflake:
   The different transformations applied on the tables and join together to get better quality data.
 
 
-## Incremental Model and Full Refresh
-"Salesorderheader" table is specified with Incremental configuration through "modifieddate" column and "salesorderid" as unique key through deduped+history.
-Other tables are Full Referesh in nature through each run.
+## Incremental Model
+For sales details:
+```sql
+-- Incremental condition: only select records with newer modifieddate than what already exists
+{% if is_incremental() %}
+    where modifieddate > (select max(modifieddate) from {{ this }})
+{% endif %}
+```
+
 
 ## Data Modelling
-In the data modelling technique, source , staging and serving are defined.According, the business context and data dimesion, dimesions and facts tables are defined in the serving folder along with yml documentation by use of surrogate key and natural key. The dimension and facts tables are joined finally to get better knowledge of the sales, customer, product, and employee.
+In the data modeling process, the source, staging, and serving layers are defined. Based on the business context and data dimensions, dimension and fact tables are created within the serving layer.
 
 ## One big table
-
 One big table is constructed by joining different tables through "db_utils.star" to join the tables.
 
 ## DBT Snapshot 
-The snapshots tables are created for predefined table through "check" function on all columns and through "timestamp" to check a particular column based on "modified date".
+Snapshot tables are created for predefined tables using the check strategy on all columns, and the timestamp strategy to track changes based on a specific column such as the "modified date."
 
 ## Slow Changing Dimesion
-Dimesion tables are created based on snapshot definition to capture changes occuring through addition of surrogate key as "dbt_valid_to" and "dbt_valid_from".
+Dimension tables are created based on snapshot definitions to capture changes over time by adding surrogate keys such as dbt_valid_from and dbt_valid_to.
 
 ## DBT tests
-
-Singular and Generic both tests are performed along with built in functions for tests as Null and Unique.
+Tests are performed to check for null values and ensure the data integrity of numeric columns.
 
 
 ## DockerFile
 To deploy work on the cloud platform, Docker File is defined outside the Dbt folder as:
+  
 FROM ghcr.io/dbt-labs/dbt-snowflake:1.2.0
 
 COPY AIRBYTE_SNOWFLAKE/ .

@@ -538,8 +538,3 @@ sources:
           - name: modifieddate
             description: ''
             tests: null
-        #freshness:
-          #warn_after:
-            #count: 6
-            #period: day
-            #loaded
